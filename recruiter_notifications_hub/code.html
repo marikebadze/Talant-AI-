@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html lang="ka"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"secondary":"#6b38d4","primary-fixed-dim":"#c3c0ff","surface-container-low":"#f2f3ff","surface-container":"#eaedff","on-primary":"#ffffff","surface-container-highest":"#dae2fd","surface-dim":"#d2d9f4","tertiary-fixed-dim":"#4cd7f6","secondary-container":"#8455ef","on-tertiary-container":"#93e8ff","primary-fixed":"#e2dfff","on-tertiary":"#ffffff","error":"#ba1a1a","on-secondary-fixed":"#23005c","outline":"#777587","surface-tint":"#4d44e3","primary":"#3525cd","surface-variant":"#dae2fd","on-secondary-container":"#fffbff","on-surface-variant":"#464555","on-tertiary-fixed-variant":"#004e5c","surface-bright":"#faf8ff","primary-container":"#4f46e5","on-background":"#131b2e","on-surface":"#131b2e","background":"#faf8ff","tertiary-container":"#006a7c","on-error-container":"#93000a","on-secondary-fixed-variant":"#5516be","inverse-on-surface":"#eef0ff","on-primary-fixed-variant":"#3323cc","inverse-primary":"#c3c0ff","outline-variant":"#c7c4d8","error-container":"#ffdad6","surface-container-high":"#e2e7ff","on-tertiary-fixed":"#001f26","secondary-fixed-dim":"#d0bcff","on-primary-container":"#dad7ff","inverse-surface":"#283044","surface-container-lowest":"#ffffff","on-error":"#ffffff","on-primary-fixed":"#0f0069","on-secondary":"#ffffff","tertiary":"#00505f","secondary-fixed":"#e9ddff","tertiary-fixed":"#acedff","surface":"#faf8ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-sm":"0.75rem","margin-tablet":"2rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-2xs":"0.25rem","space-md":"1rem","margin-mobile":"1rem","space-xl":"2rem","space-2xl":"3rem","margin-desktop":"2.5rem","space-xs":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"title-md":["Inter"],"body-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-md":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"metric-score":["Plus Jakarta Sans"],"body-md":["Inter"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"metric-score":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1600px] mx-auto px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="TalentAI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UUVrTjMQv_9_6czxxGWjFXYQsKJhhpjE_rN6Rsh1_DODLl2K2L43HksW7zEaVhys1q9z0xnNqQwyaII0TRBEAn_Wcxhl722gxeuo_LRmbFAtlSjhswTPTWu0xCgNpElS2vuTgAHPXcEc9VqqcIxYN_e1l-EvD_5SMi9w-6hXnF7WG4MBWvdg0TrNsZIk0gPCHapcHhOvC0lmDSQvXhr2C3QAO4pDjsnIKa4XnF5XjDW027dBFe8LLpjOM"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Talent<span class="text-primary">AI</span></span></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md text-title-md rounded-lg"><a class="px-space-md py-space-xs font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="vacancies" href="#">ვაკანსიები</a><a class="px-space-md py-space-xs font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="candidates" href="#">კანდიდატები</a><a class="px-space-md py-space-xs font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="interviews" href="#">ჩათი &amp; ინტერვიუები</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary font-title-md text-title-md rounded-lg" data-path="notifications" href="#">შეტყობინებები</a><a class="px-space-md py-space-xs font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="analytics" href="#">ანალიტიკა</a></nav></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden md:flex items-center bg-surface-container-low rounded-lg p-space-2xs"><button class="px-space-xs py-space-2xs rounded font-label-sm text-label-sm bg-surface-container-lowest text-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)] font-semibold" type="button">GE</button><button class="px-space-xs py-space-2xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">EN</button><button class="px-space-xs py-space-2xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">RU</button></div><a class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center justify-center" data-path="notifications" href="#"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-error px-1 font-label-sm text-[10px] leading-none text-on-error">4</span></a><div class="h-6 w-px bg-outline-variant/40 hidden sm:block"></div><div class="flex items-center gap-space-sm pl-space-2xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1WbiupGlrNh8Ew96c94GEs746d79nnX3jv0llit1Nvnhts9sJyZzyLfqVHh44crdjRnxL6c2o4NfQUgHgi913q8sQNPeh0rkGnQ7RjhmqbYSEuyqxYbppDoeHvhaqqqWq0CISTrCi-at9qivs6bECndng0gIb0nnsCp_zvcKsOQy-vbssiq4sHegzUWPRyeJ4TMbEbYGGHoUR4ruYmLWb96aDXjziWHtSAlggRQ6KI5pHgWm-kvVME76p4"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">ელენე მაისურაძე</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">ტალანტების ლიდი</span></div></div></div></div></header><main class="w-full pt-16 bg-background min-h-[calc(100vh-64px)] flex flex-col"><div class="flex flex-col w-full">
+<!-- Top Command Context Bar -->
+<div class="w-full bg-surface-container-lowest/60 backdrop-blur-md">
+<div class="max-w-[1600px] mx-auto px-margin-desktop py-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Breadcrumb & Title Context -->
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex-wrap">
+<span class="hover:text-primary transition-colors cursor-pointer">კომპანიის კაბინეტი</span>
+<span class="material-symbols-outlined text-xs text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">შეტყობინებები &amp; ალერტების ჰაბი</span>
+<span class="material-symbols-outlined text-xs text-outline">chevron_right</span>
+<span class="text-primary font-semibold">TechNova Global</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">შეტყობინებების მართვის ცენტრი</h1>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Real-time Sync
+          </span>
+</div>
+</div>
+<!-- User Active Roles & Fast Global Actions -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">ნინო ბერიძე (Lead) &amp; ლევან კახაძე (VP)</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md" id="markAllReadBtn">
+<span class="material-symbols-outlined text-sm text-primary">done_all</span>
+<span>ყველას წაკითხულად მონიშვნა</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>ალერტების წესები</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Container -->
+<div class="w-full max-w-[1600px] mx-auto px-margin-desktop py-space-lg flex flex-col gap-space-xl">
+<!-- 1. Executive Metric KPI Cards Mosaic -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Incoming Interests -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">შემოსული მოთხოვნები</span>
+<span class="font-metric-score text-metric-score text-on-surface mt-1">14</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">send_and_archive</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">trending_up</span> +3 ბოლო 24 სთ
+          </span>
+<span class="text-on-surface-variant">Direct Pitch</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary opacity-20 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Card 2: Priority Unread -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">წაუკითხავი პრიორიტეტული</span>
+<span class="font-metric-score text-metric-score text-error mt-1">5</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">priority_high</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-error font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> ყურადღებას ითხოვს
+          </span>
+<span class="text-on-surface-variant">SLA &lt; 2სთ</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-error opacity-40 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Card 3: Chat Replies -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">ახალი პასუხები ჩათში</span>
+<span class="font-metric-score text-metric-score text-on-surface mt-1">3</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">forum</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-primary font-semibold flex items-center gap-1">
+            ინტერვიუს დრო დადასტურდა
+          </span>
+<span class="text-on-surface-variant">აქტიური</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary opacity-20 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Card 4: AI Matching Top 5% -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI მეჩინგი (Top 5%)</span>
+<span class="font-metric-score text-metric-score text-primary mt-1">8</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">verified</span> 95%+ სიზუსტე
+          </span>
+<span class="text-on-surface-variant">ავტომატური</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-tertiary opacity-30 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<!-- Quick Action / Synced Status Strip -->
+<div class="bg-surface-container-low rounded-xl px-space-md py-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">bolt</span>
+<span>ავტომატური სინქრონიზაცია ჩართულია: <b class="text-on-surface">Slack (#recruiting-alerts)</b> და <b class="text-on-surface">MS Teams (Talent Stream)</b></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shadow-sm transition-colors">
+          სინქრონიზაციის განახლება
+        </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-sm text-label-sm shadow-sm transition-colors" id="clearFiltersBtn">
+          ფილტრების გასუფთავება
+        </button>
+</div>
+</div>
+<!-- 2-Column Content Canvas: Feeds (8 cols) + Right Sidebar (4 cols) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- Main Feed Column (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Filter Tabs Component -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 scrollbar-none">
+<button class="filter-tab px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-filter="all">
+<span>ყველა</span>
+<span class="bg-on-primary/20 text-on-primary px-1.5 py-0.5 rounded-full text-[11px]">32</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm" data-filter="pitch">
+<span class="material-symbols-outlined text-sm">stars</span>
+<span>კანდიდატის ინტერესი (7)</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm" data-filter="ai">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<span>AI მეჩინგი (8)</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm" data-filter="chat">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>ჩათი &amp; პასუხები (10)</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm" data-filter="system">
+<span class="material-symbols-outlined text-sm">notifications_active</span>
+<span>სისტემური &amp; აუდიტი (7)</span>
+</button>
+</div>
+<!-- Notification Cards Feed Container -->
+<div class="flex flex-col gap-space-md" id="notificationCardsContainer">
+<!-- TYPE 1: Candidate Expresses Direct Interest (Direct Outreach Pitch) -->
+<div class="notification-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="pitch">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Professional modern profile headshot of a confident Georgian male software engineer in a minimal dark studio setting with cool ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcSK0Z23e8i14IgaR327PXhaQJBAY3sQsMxv6zMI5YMFuEFa1jhLoz81S8VI0Exnf_--Irzcg2nZjOsKVhi2qPtVdcW7Sp6uFmQXHz1_fPuywHPyOwZrUJYly8fO5M5CoS2ljLPUsiRivSVmuCQRaEVx9nlYFGTDTQmBDeBErWgzdrSeYyg0i_jJjxpFQOF-Zs6XL2VCgMPvnViXiMePmIOBCeI-TW3qT1lYHeYsc_aR7kG-6F0-OB"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-xs shadow-sm">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-on-surface">ნიკა კალანდაძე</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Senior Distributed Systems</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 წუთის წინ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+                    კანდიდატმა გამოხატა პირდაპირი ინტერესი (Direct Pitch)
+                  </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    ვაკანსიაზე: <span class="font-semibold text-primary">#REQ-4125 Senior Distributed Systems &amp; AI Infra</span>
+</p>
+</div>
+</div>
+<!-- Match Radial Mini Component -->
+<div class="flex flex-col items-center flex-shrink-0 bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm text-primary font-bold">
+<span>98%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AI Match</span>
+</div>
+</div>
+<!-- Pitch Message Excerpt Box -->
+<div class="mt-space-md bg-surface-container-low/70 rounded-lg p-space-md font-body-md text-body-md text-on-surface relative">
+<span class="material-symbols-outlined absolute top-2 right-2 text-outline-variant/30 text-2xl">format_quote</span>
+<p class="italic">
+                „გამარჯობა ნინო და ტექ-გუნდო, გავეცანი TechNova-ს ახალ რეპოზიტორიებს და განაწილებული სისტემების გამოწვევებს. ჩემი ბოლო 5 წლიანი გამოცდილება Go/Rust მიკროსერვისების ოპტიმიზაციაში ზუსტად ემთხვევა თქვენს მიზნებს. სიამოვნებით გავესაუბრები ლევანს არქიტექტურულ დეტალებზე.“
+              </p>
+<div class="mt-space-sm flex items-center gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">attachment</span> რეზიუმე_Kalandadze_2025.pdf
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">verified</span> Blind-Revealed პროფილი
+                </span>
+</div>
+</div>
+<!-- Recruiter Instant Action Button Cluster -->
+<div class="mt-space-md flex items-center justify-between gap-space-sm flex-wrap pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-sm">visibility</span>
+<span>დოსიეს განხილვა</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">calendar_month</span>
+<span>ინტერვიუზე მოწვევა</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">chat</span>
+<span>სწრაფი ჩათი</span>
+</button>
+</div>
+<button class="px-space-sm py-2 text-on-surface-variant hover:text-error font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">archive</span>
+<span>რეზერვში გადატანა</span>
+</button>
+</div>
+</div>
+<!-- TYPE 2: AI Matching Notification (New High Match Candidate Found) -->
+<div class="notification-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="ai">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-on-surface">TalentAI Algorithmic Radar</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">Semantic Match</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">38 წუთის წინ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+                    🎯 აღმოჩენილია იდეალური მეჩინგი (96% Match)
+                  </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    ახალი ანონიმური კანდიდატი <span class="font-semibold text-on-surface">#ENG-7742</span> (Rust &amp; Distributed Storage არქიტექტორი) Q2 ინფრასტრუქტურის გუნდისთვის.
+                  </p>
+</div>
+</div>
+<!-- High Match Pill -->
+<div class="flex flex-col items-center flex-shrink-0 px-space-sm py-1.5 rounded-lg bg-tertiary/10 text-tertiary">
+<span class="font-headline-sm text-headline-sm font-bold">96%</span>
+<span class="font-label-sm text-label-sm">Fit Score</span>
+</div>
+</div>
+<!-- AI Skill Mapping Badges & Rationale -->
+<div class="mt-space-md bg-surface-container-low/50 rounded-lg p-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">ტექნოლოგიური თანხვედრა &amp; Stack</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Top 2% ბაზარზე</span>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Rust Systems (6 წელი)
+                </span>
+<span class="px-space-xs py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Raft Consensus Protocol
+                </span>
+<span class="px-space-xs py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> High-load Storage Engines
+                </span>
+<span class="px-space-xs py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Kubernetes Operators
+                </span>
+</div>
+</div>
+<!-- Actions -->
+<div class="mt-space-md flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">troubleshoot</span>
+<span>პროფილის სკრინინგი</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-sm">mark_email_read</span>
+<span>მოწვევის გაგზავნა</span>
+</button>
+</div>
+<button class="px-space-sm py-2 text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+<span>ვაკანსიასთან შედარება</span>
+</button>
+</div>
+</div>
+<!-- TYPE 3: Online Chat Incoming Message & Inline Recruiter Reply -->
+<div class="notification-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="chat">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Crisp professional headshot of a Georgian middle-aged lead tech specialist smiling slightly with eyeglasses and smart casual blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4V1LlYRWApx4B5YtoFUlGvE1q9nlbGIBuUZSPy_fyD0rcwvZC9EMKpTe3_Cv-SvCMpGBYJXSSRDBIt3SdoFs_ss7SwJLA_SpleDmC3muzZ3rbUXwPpyZobxyamb5nZKowwYQM_wEHNgV30BYMPyBIyitTZ-6_aSg6DedMLMXWmh5SkBtRoe5jpOhwepIcheXV0kIrp0dOUX4G-40KjiRM9bxjlkATgd-pz5FWpg3AzfU6On7yTUSG"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-on-surface">ლაშა თორდია</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Lead MLOps</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 საათის წინ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+                    💬 ახალი პასუხი კანდიდატისგან (Direct Chat)
+                  </h3>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">event_available</span>
+                დადასტურებული დრო
+              </span>
+</div>
+<!-- Incoming Chat Quote Box -->
+<div class="mt-space-md bg-surface-container-low rounded-lg p-space-md">
+<p class="font-body-md text-body-md text-on-surface">
+                „მოგესალმებით ნინო, შემოთავაზებული სამშაბათის 16:00 საათი იდეალურად მესადაგება ტექნიკური ინტერვიუსთვის. კალენდარში უკვე დავადასტურე. გთხოვთ შეხვედრის Google Meet ლინკიც მომაწოდოთ.“
+              </p>
+</div>
+<!-- Interactive Inline Quick Reply Composer -->
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">სწრაფი პასუხები:</span>
+<button class="px-space-xs py-1 rounded-full bg-surface-container-high hover:bg-primary-fixed text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors" onclick="insertReplyPreset(this)">
+                  „მადლობა ლაშა, შეხვედრის ბმული გამოგზავნილია!“
+                </button>
+<button class="px-space-xs py-1 rounded-full bg-surface-container-high hover:bg-primary-fixed text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors" onclick="insertReplyPreset(this)">
+                  „კალენდარული მოსაწვევი განახლდა.“
+                </button>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<input class="flex-1 bg-surface-container-lowest px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none ring-1 ring-outline-variant/60 focus:ring-primary transition-all" id="recruiterReplyInput" placeholder="მისწერეთ ლაშას სწრაფი პასუხი..." type="text"/>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-all flex items-center gap-1 shadow-sm" onclick="sendQuickReply()">
+<span>გაგზავნა</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+<a class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" href="#" title="სრულ ჩათში გადასვლა">
+<span class="material-symbols-outlined text-base">open_in_new</span>
+</a>
+</div>
+<div class="hidden font-label-sm text-label-sm text-tertiary mt-1 flex items-center gap-1" id="replySuccessToast">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                პასუხი წარმატებით გაიგზავნა კანდიდატის ჩათში!
+              </div>
+</div>
+</div>
+<!-- TYPE 4: System Success Notification -->
+<div class="notification-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="system">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-on-surface">სისტემური აუდიტი &amp; ორკესტრაცია</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Workflow Complete</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 საათის წინ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+                    ✅ ვაკანსიის დრაფტი #REQ-4125 ოფიციალურად გამოქვეყნდა
+                  </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    ლევან კახაძემ (VP of Engineering) დაადასტურა განახლებული ტექნიკური მოთხოვნები. ვაკანსია დალექილია და გაზიარებულია LinkedIn, TalentAI Network და კარიერის პორტალზე.
+                  </p>
+</div>
+</div>
+</div>
+<!-- Distribution Channels Status Strip -->
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-3 gap-space-xs text-center font-label-sm text-label-sm">
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>TalentAI Talent Pool: აქტიური</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>LinkedIn Jobs API: გამოქვეყნებული</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>TechNova Careers: Indexed</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">public</span>
+<span>ლაივ ვაკანსიის ნახვა</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">share</span>
+<span>Slack არხში რეპორტი</span>
+</button>
+</div>
+</div>
+<!-- TYPE 5: System Error / Action Failed Notification -->
+<div class="notification-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="system">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center text-error flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">error</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-error font-bold">ინციდენტი &amp; ხელმოწერის შეფერხება</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Critical 502</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 საათის წინ</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+                    ❌ DocuSign API ხელმოწერის ვერიფიკაციის შეცდომა
+                  </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    კანდიდატის <span class="font-semibold text-on-surface">#ENG-3190</span> ოფერის საბოლოო გენერაციისას ვერ მოხდა საკომპენსაციო დანართის ავტომატური დამოწმება.
+                  </p>
+</div>
+</div>
+</div>
+<!-- Error Terminal Snippet -->
+<div class="mt-space-md bg-inverse-surface rounded-lg p-space-md text-inverse-on-surface font-mono text-xs overflow-x-auto">
+<code>Error 502: Bad Gateway on /v2.1/accounts/docusign/envelopes. Payload validation failed: Annex_B_Compensation_Structure.pdf checksum mismatch. Retry attempt 3/3 exhausted.</code>
+</div>
+<!-- Resolution Action Cluster -->
+<div class="mt-space-md flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error hover:bg-error/90 font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-sm">refresh</span>
+<span>ხელახალი გენერაცია (Retry)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">receipt_long</span>
+<span>ხარვეზის ლოგები</span>
+</button>
+</div>
+<button class="px-space-sm py-2 text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">support_agent</span>
+<span>HR Operations მხარდაჭერა</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar Widgets Column (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Widget 1: Channel Sync Status & Integrations -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">ინტეგრირებული არხები</h4>
+<span class="material-symbols-outlined text-primary text-xl">hub</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Slack -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm font-bold text-sm">
+                  #
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Slack Bot</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#recruiting-alerts</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Connected
+              </span>
+</div>
+<!-- Teams -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm font-bold text-sm">
+                  T
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">MS Teams</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Talent Strategy Hub</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Active
+              </span>
+</div>
+<!-- Email -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-outline shadow-sm">
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Corporate Email</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">hr@technova.ge</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Syncing
+              </span>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center transition-colors">
+            Webhook &amp; API პარამეტრები
+          </button>
+</div>
+<!-- Widget 2: SLA Response Time Vector Tracker -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">SLA მონიტორინგი</h4>
+<span class="px-space-xs py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-bold">ონლაინ</span>
+</div>
+<!-- Inline SVG SLA Ring & Performance Stat -->
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 flex-shrink-0 flex items-center justify-center">
+<svg class="w-20 h-20 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="82, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm text-on-surface font-bold">1.8სთ</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">პასუხის საშუალო დრო</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">კომპანიის სამიზნე SLA: &lt; 4.0 სთ</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-1">✓ 42%-ით სწრაფი ბაზარზე</span>
+</div>
+</div>
+<div class="space-y-2 pt-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">ინტერვიუს დასტურის სისწრაფე</span>
+<span class="text-on-surface font-semibold">94%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 94%"></div>
+</div>
+</div>
+</div>
+<!-- Widget 3: Priority Candidates Quick Watchlist -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">პრიორიტეტული სია</h4>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">3</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline">ყველა</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Candidate 1 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Professional modern portrait of a Georgian female UX researcher and product designer looking confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjx30bNNEXtofgJ0GJCvqmvZXKkY744Yj01EsHl-iOj0U_aV2joITceToK5jjzXfjCMSclzpsPLUCiHJpaDo8Ps3UwRm2g5R1cR85j45yl-jZyIg62kPE9uVVlB9usY4CSIgYpcHC4gpeVnPi0yzYE-ocS4CSWGkPZmJXH2nHn_K_2loOU7OSqfv8zHroqkJwkWy1IAHh-bLNgML5COS5Faes2OIgSr2W2Y8GJ1RhZA7dyjBDagByG"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ანა გაბუნია</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Staff Product Designer</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">95%</span>
+</div>
+<!-- Candidate 2 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed font-semibold flex items-center justify-center text-xs">
+                  DK
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">დავით კვარაცხელია</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lead Data Platform</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">92%</span>
+</div>
+<!-- Candidate 3 -->
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold flex items-center justify-center text-xs">
+                  MM
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">მარიამ მგელაძე</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cloud Security Eng</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">89%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Logic for Filter Tabs, Preset Reply & Batch Mark -->
+<script>
+    // Tab Filtering Logic
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const notificationItems = document.querySelectorAll('.notification-item');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Reset styles
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary');
+          t.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+        // Set active style
+        tab.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+        tab.classList.add('bg-primary-container', 'text-on-primary');
+
+        const filter = tab.getAttribute('data-filter');
+        notificationItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Clear filters button resets to 'all'
+    const clearFiltersBtn = document.getElementById('clearFiltersBtn');
+    if (clearFiltersBtn) {
+      clearFiltersBtn.addEventListener('click', () => {
+        const firstTab = document.querySelector('.filter-tab[data-filter="all"]');
+        if (firstTab) firstTab.click();
+      });
+    }
+
+    // Quick preset insertion
+    function insertReplyPreset(btn) {
+      const input = document.getElementById('recruiterReplyInput');
+      if (input) {
+        input.value = btn.innerText.replace(/[„“]/g, '').trim();
+        input.focus();
+      }
+    }
+
+    // Send inline quick reply
+    function sendQuickReply() {
+      const input = document.getElementById('recruiterReplyInput');
+      const toast = document.getElementById('replySuccessToast');
+      if (input && input.value.trim() !== '') {
+        input.value = '';
+        if (toast) {
+          toast.classList.remove('hidden');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 4000);
+        }
+      }
+    }
+
+    // Mark all as read visual interaction
+    const markAllReadBtn = document.getElementById('markAllReadBtn');
+    if (markAllReadBtn) {
+      markAllReadBtn.addEventListener('click', () => {
+        notificationItems.forEach(item => {
+          item.classList.add('opacity-80');
+        });
+        markAllReadBtn.innerHTML = '<span class="material-symbols-outlined text-sm text-tertiary">check</span> <span>ყველა წაკითხულია</span>';
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-auto"><div class="max-w-[1600px] mx-auto px-margin-desktop py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant">© 2025 TalentAI Ecosystem. ყველა უფლება დაცულია.</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" href="#">უსაფრთხოება და AI აუდიტი</a><a class="hover:text-on-surface transition-colors" href="#">კონფიდენციალურობა</a><a class="hover:text-on-surface transition-colors" href="#">მხარდაჭერა</a></div></div></footer></body></html>

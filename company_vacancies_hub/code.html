@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html lang="ka"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>TalentAI Enterprise Platform</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"inverse-primary":"#c3c0ff","on-tertiary-fixed-variant":"#004e5c","on-surface":"#131b2e","surface":"#faf8ff","secondary":"#6b38d4","on-tertiary-container":"#93e8ff","on-tertiary-fixed":"#001f26","outline":"#777587","on-secondary-fixed-variant":"#5516be","on-error-container":"#93000a","surface-container-highest":"#dae2fd","on-secondary-fixed":"#23005c","surface-container-lowest":"#ffffff","on-secondary-container":"#fffbff","surface-container-high":"#e2e7ff","tertiary":"#00505f","tertiary-fixed":"#acedff","secondary-fixed-dim":"#d0bcff","surface-dim":"#d2d9f4","secondary-container":"#8455ef","inverse-on-surface":"#eef0ff","on-primary-fixed":"#0f0069","primary":"#3525cd","surface-tint":"#4d44e3","secondary-fixed":"#e9ddff","on-secondary":"#ffffff","inverse-surface":"#283044","primary-fixed":"#e2dfff","on-background":"#131b2e","primary-container":"#4f46e5","on-surface-variant":"#464555","surface-bright":"#faf8ff","on-primary-container":"#dad7ff","background":"#faf8ff","tertiary-fixed-dim":"#4cd7f6","outline-variant":"#c7c4d8","on-primary-fixed-variant":"#3323cc","surface-variant":"#dae2fd","error-container":"#ffdad6","on-primary":"#ffffff","tertiary-container":"#006a7c","error":"#ba1a1a","on-tertiary":"#ffffff","primary-fixed-dim":"#c3c0ff","surface-container":"#eaedff","on-error":"#ffffff","surface-container-low":"#f2f3ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-tablet":"2rem","space-md":"1rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.75rem","space-2xs":"0.25rem","space-xs":"0.5rem","space-2xl":"3rem","space-xl":"2rem","gutter-desktop":"1.5rem"},"fontFamily":{"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"display-hero":["Plus Jakarta Sans"],"title-md":["Inter"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"metric-score":["Plus Jakarta Sans"],"label-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"metric-score":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between pt-5 pb-6"><div class="flex flex-col"><div class="flex items-center gap-3 px-6 pb-6"><img alt='Modern geometric vector logo for AI HR platform "TalentAI". An abstract glowing neural node interconnected with human profile silhouette or dual helix, sharp indigo and cyan gradient, sleek minimalist technology icon, dark transparent background, high precision.. Design context: - Primary color: #4f46e5
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UUVrTjMQv_9_6czxxGWjFXYQsKJhhpjE_rN6Rsh1_DODLl2K2L43HksW7zEaVhys1q9z0xnNqQwyaII0TRBEAn_Wcxhl722gxeuo_LRmbFAtlSjhswTPTWu0xCgNpElS2vuTgAHPXcEc9VqqcIxYN_e1l-EvD_5SMi9w-6hXnF7WG4MBWvdg0TrNsZIk0gPCHapcHhOvC0lmDSQvXhr2C3QAO4pDjsnIKa4XnF5XjDW027dBFe8LLpjOM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">TalentAI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Intelligence HR</span></div></div><div class="px-6 py-2"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">ნავიგაცია</span></div><nav class="flex flex-col gap-1 px-3" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vakansiebis-martva" href="#"><span class="material-symbols-outlined text-[20px]">business_center</span><span class="font-title-md text-title-md">ვაკანსიების მართვა</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kandidatebis-paiplaini" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-title-md text-title-md">კანდიდატების ფაიფლაინი</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="gasaubrebebi" href="#"><span class="material-symbols-outlined text-[20px]">video_camera_front</span><span class="font-title-md text-title-md">გასაუბრებები</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="operebi" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-title-md text-title-md">ოფერები</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="onbordingi-welcome" href="#"><span class="material-symbols-outlined text-[20px]">waving_hand</span><span class="font-title-md text-title-md">ონბორდინგი &amp; Welcome</span></a><div class="my-2 px-3"><div class="h-px w-full bg-surface-container-high"></div></div><div class="px-3 py-1.5"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">ანალიტიკა &amp; AI</span></div><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="brigadebi-analitika" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-title-md text-title-md">ბრიგადები &amp; ანალიტიკა</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="rekruiteris-zrda-kouchingi" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-title-md text-title-md">რეკრუტერის ზრდა &amp; ქოუჩინგი</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ai-auditi-etika" href="#"><span class="material-symbols-outlined text-[20px]">policy</span><span class="font-title-md text-title-md">AI აუდიტი &amp; ეთიკა</span></a></nav></div><div class="px-4"><div class="p-4 rounded-xl bg-surface-container flex flex-col gap-2"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-label-md text-label-md">AI Copilot Active</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">სინთეზირებული რეკომენდაციები მზადაა განხილვისთვის.</p></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 w-96"><div class="flex items-center w-full bg-surface-container-lowest rounded-lg px-3 py-1.5 shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]"><span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="ძიება (კანდიდატები, ვაკანსიები, უნარები)..." type="text"/><span class="font-label-sm text-label-sm text-outline bg-surface-container px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-5"><div class="flex items-center bg-surface-container rounded-lg p-0.5 text-on-surface-variant font-label-md text-label-md"><button class="px-2 py-1 rounded bg-surface-container-lowest text-primary shadow-xs font-bold">GE</button><button class="px-2 py-1 rounded hover:text-on-surface transition-colors">EN</button><button class="px-2 py-1 rounded hover:text-on-surface transition-colors">RU</button></div><div class="h-5 w-px bg-surface-container-high"></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="შეტყობინებები"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="პარამეტრები"><span class="material-symbols-outlined text-[22px]">settings</span></button><div class="h-5 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WbiupGlrNh8Ew96c94GEs746d79nnX3jv0llit1Nvnhts9sJyZzyLfqVHh44crdjRnxL6c2o4NfQUgHgi913q8sQNPeh0rkGnQ7RjhmqbYSEuyqxYbppDoeHvhaqqqWq0CISTrCi-at9qivs6bECndng0gIb0nnsCp_zvcKsOQy-vbssiq4sHegzUWPRyeJ4TMbEbYGGHoUR4ruYmLWb96aDXjziWHtSAlggRQ6KI5pHgWm-kvVME76p4"/><div class="flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-snug">ნინო ბერიძე</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-none">Senior Talent Partner</span></div></div></div></header><main class="relative pt-16 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full gap-6">
+<!-- Breadcrumb & Top Bar Navigation context -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span>ვაკანსიების მართვა</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">აქტიური და დახურული პოზიციები (Requisitions Hub)</span>
+</div>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">ვაკანსიების მართვის ცენტრი</h1>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">TechNova Global</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>სვეტების მორგება</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>ექსპორტი (CSV/PDF)</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-on-primary font-label-md text-label-md shadow-md hover:shadow-lg transition-all">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>ახალი ვაკანსია (AI Studio)</span>
+</button>
+</div>
+</div>
+<!-- KPI Metrics Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- KPI 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline font-medium">სულ ვაკანსიები</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-primary material-symbols-outlined text-[20px]">folder_special</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-metric-score text-metric-score text-on-surface">34</span>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-primary font-bold">12 აქტიური</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-outline">14 დახურული</span>
+</div>
+</div>
+<div class="mt-3 h-1.5 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 35%"></div>
+<div class="bg-secondary-container h-full" style="width: 25%"></div>
+<div class="bg-outline-variant h-full" style="width: 40%"></div>
+</div>
+<div class="mt-2 flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>აქტიური: 12</span>
+<span>შერჩევა: 8</span>
+<span>დახურული: 14</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline font-medium">საშუალო Time-to-Hire</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-tertiary material-symbols-outlined text-[20px]">timer</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-metric-score text-metric-score text-on-surface">18.4</span>
+<span class="font-title-md text-title-md text-on-surface-variant">დღე</span>
+</div>
+<div class="flex items-center text-tertiary font-label-md text-label-md bg-tertiary-fixed/30 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[16px]">trending_down</span>
+<span class="font-bold">-32%</span>
+</div>
+</div>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant">
+        ბაზრის SLA-სთან შედარებით 8.6 დღით სწრაფი ციკლი
+      </p>
+</div>
+<!-- KPI 3 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline font-medium">კანდიდატების ფაიფლაინი</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-secondary material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-metric-score text-metric-score text-on-surface">286</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 ფინალურ ეტაპზე</span>
+</div>
+<div class="mt-3 flex items-center gap-2">
+<div class="flex-1 bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 65%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">+18 დღეს</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-outline truncate">24 ახალი რეზიუმე განსახილველია</span>
+</div>
+<!-- KPI 4 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline font-medium">AI Match Rate სიზუსტე</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-primary material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-metric-score text-metric-score text-primary font-bold">95.8%</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">High Precision</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>ავტომატური სკრინინგი:</span>
+<span class="font-bold text-on-surface">1,420 რეზიუმე</span>
+</div>
+</div>
+</div>
+<!-- Requisitions Main Filter Console -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-4">
+<!-- Primary Status Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-3 border-b-0 pb-1">
+<div class="flex items-center gap-1.5 p-1 bg-surface-container-low rounded-lg overflow-x-auto max-w-full">
+<button class="px-3.5 py-1.5 rounded-md bg-surface-container-lowest text-primary shadow-xs font-label-md text-label-md font-bold flex items-center gap-1.5">
+<span>ყველა ვაკანსია</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary/10 text-primary text-[11px]">34</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md hover:bg-surface-container-lowest/60 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>მიმდინარე / აქტიური</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-outline text-[11px]">12</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md hover:bg-surface-container-lowest/60 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>შერჩევის პროცესში</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-outline text-[11px]">8</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md hover:bg-surface-container-lowest/60 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>დასრულებული / დახურული</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-outline text-[11px]">14</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md hover:bg-surface-container-lowest/60 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span>დრაფტი</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-outline text-[11px]">2</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-error transition-colors px-2 py-1 rounded font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>ფილტრების გასუფთავება</span>
+</button>
+</div>
+</div>
+<!-- Date Range & Secondary Filters Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 pt-2">
+<!-- Search Bar -->
+<div class="lg:col-span-4 flex items-center bg-surface-container-low rounded-lg px-3 py-2 shadow-inner">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="ძიება: პოზიცია, REQ კოდი, ტექნოლოგია..." type="text"/>
+</div>
+<!-- Date Range Selector -->
+<div class="lg:col-span-4 flex items-center gap-2 bg-surface-container-low rounded-lg px-3 py-1.5">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="font-label-sm text-label-sm text-outline">დან:</span>
+<span class="font-medium text-on-surface">01/01/2025</span>
+<span class="text-outline mx-1">-</span>
+<span class="font-label-sm text-label-sm text-outline">მდე:</span>
+<span class="font-medium text-on-surface">31/12/2025</span>
+</div>
+<div class="ml-auto">
+<select class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded px-2 py-1 outline-none cursor-pointer">
+<option>Q1 2025</option>
+<option>ბოლო 30 დღე</option>
+<option>ბოლო 6 თვე</option>
+<option selected="">წლიური 2025</option>
+</select>
+</div>
+</div>
+<!-- Department Filter -->
+<div class="lg:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-3 py-2.5 outline-none cursor-pointer">
+<option value="">ყველა დეპარტამენტი</option>
+<option selected="">Engineering &amp; AI</option>
+<option>Product &amp; Design</option>
+<option>People &amp; Ops</option>
+<option>Finance</option>
+</select>
+</div>
+<!-- Recruiter Filter -->
+<div class="lg:col-span-2">
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-3 py-2.5 outline-none cursor-pointer">
+<option value="">ყველა რეკრუტერი</option>
+<option>ნინო ბერიძე</option>
+<option>თამარ გიორგაძე</option>
+<option>დავით მაისურაძე</option>
+<option>სანდრო კობახიძე</option>
+<option>ელენე ჩიქოვანი</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Requisitions Data Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<th class="py-3.5 px-4 font-bold">ვაკანსიის დეტალები &amp; REQ</th>
+<th class="py-3.5 px-4 font-bold">სტატუსი</th>
+<th class="py-3.5 px-4 font-bold">ვადები (დაწყება - დასრულება)</th>
+<th class="py-3.5 px-4 font-bold">ფაიფლაინის ძაბრი</th>
+<th class="py-3.5 px-4 font-bold">AI MATCH &amp; რეკრუტერი</th>
+<th class="py-3.5 px-4 font-bold text-right">მოქმედება</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm">
+<!-- ROW 1: Senior AI/ML Infrastructure Engineer (Closed / Filled) -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                      Senior AI/ML Infrastructure Engineer
+                    </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-outline">#REQ-4092</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">apartment</span>Engineering &amp; AI</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">place</span>Remote / თბილისი</span>
+<span>•</span>
+<span class="text-tertiary font-medium">დაქირავებული: ნიკა კალანდაძე</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>დასრულებული (Filled)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">event_available</span>
+<span>15 თებ, 2025 — 28 მარ, 2025</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">41 დღე (SLA ვადაში)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>142 აპლიკანტი</span>
+<span class="font-bold text-tertiary">1 Hired</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 100%"></div>
+</div>
+<span class="text-[11px] text-outline font-medium">Sourced ➔ S ➔ Int ➔ Offer</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">96.4%</span>
+<span class="text-[11px] text-outline">AI Precision</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs">
+                    ნბ
+                  </div>
+<span class="font-label-sm text-label-sm text-on-surface">ნინო ბერიძე</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">
+                  ანალიტიკა &amp; Post-Mortem
+                </button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="დეტალები">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: Principal Distributed Systems Architect (Active / Interviewing) -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">lan</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                      Principal Distributed Systems Architect
+                    </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-outline">#REQ-4105</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">apartment</span>Core Platform</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">work</span>Hybrid ($140K-$160K)</span>
+<span>•</span>
+<span class="text-secondary font-medium">Live Interview ფაზა</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>ინტერვიუები (Active)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">calendar_month</span>
+<span>01 მარ, 2025 — მიმდინარე</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">სამიზნე: 15 აპრილი 2025</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>88 კანდიდატი</span>
+<span class="font-bold text-secondary">4 ფინალისტი</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-secondary-container h-full" style="width: 75%"></div>
+</div>
+<span class="text-[11px] text-secondary font-medium">3 ტექნიკური შეფასება დღეს</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary font-bold">98.1%</span>
+<span class="text-[11px] text-outline">Top Match</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">
+                    თგ
+                  </div>
+<span class="font-label-sm text-label-sm text-on-surface">თამარ გიორგაძე</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary/90 font-label-sm text-label-sm transition-colors">
+                  კანდიდატების მართვა
+                </button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="მატრიცა">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: Lead MLOps Engineer (Kubernetes & Triton) -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">memory</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                      Lead MLOps Engineer (Kubernetes &amp; Triton)
+                    </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-outline">#REQ-4112</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">apartment</span>AI Infra &amp; Ops</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">place</span>Remote</span>
+<span>•</span>
+<span class="text-primary font-medium">Blind Screening ფაზა</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>სკრინინგი (Screening)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">calendar_month</span>
+<span>10 მარ, 2025 — მიმდინარე</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">სამიზნე: 25 აპრილი 2025</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>64 შემოსული</span>
+<span class="font-bold text-primary">12 სორტირებული</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 45%"></div>
+</div>
+<span class="text-[11px] text-outline font-medium">AI ანალიზი აქტიურია</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">92.0%</span>
+<span class="text-[11px] text-outline">AI Index</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-xs">
+                    დმ
+                  </div>
+<span class="font-label-sm text-label-sm text-on-surface">დავით მაისურაძე</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors">
+                  სკრინინგი
+                </button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="დეტალები">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Staff Product Designer (Closed / Filled) -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-outline shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">design_services</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                      Staff Product Designer (Design Systems &amp; AI)
+                    </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-outline">#REQ-4088</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">apartment</span>Product &amp; Design</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">place</span>Hybrid</span>
+<span>•</span>
+<span class="text-tertiary font-medium">დაქირავებული: ანა ქავთარაძე</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>დასრულებული (Filled)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">event_available</span>
+<span>10 იან, 2025 — 20 თებ, 2025</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">დაიხურა 41 დღეში</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>96 პორტფოლიო</span>
+<span class="font-bold text-tertiary">1 Hired</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-outline h-full" style="width: 100%"></div>
+</div>
+<span class="text-[11px] text-outline font-medium">ონბორდინგი დასრულებულია</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline font-bold">94.8%</span>
+<span class="text-[11px] text-outline">Portfolio Fit</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-xs">
+                    ეჩ
+                  </div>
+<span class="font-label-sm text-label-sm text-on-surface">ელენე ჩიქოვანი</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">
+                  არქივის ნახვა
+                </button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="დეტალები">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Senior Backend Engineer (Go / Rust & gRPC) -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-600 shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                      Senior Backend Engineer (Go / Rust &amp; gRPC)
+                    </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-outline">#REQ-4120</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">apartment</span>Core Services</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">work</span>Remote</span>
+<span>•</span>
+<span class="text-emerald-600 font-medium">აპლიკაციების მიღება</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-ping"></span>
+<span>აქტიური (Accepting)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">calendar_month</span>
+<span>20 მარ, 2025 — მიმდინარე</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">სამიზნე: 05 მაისი 2025</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>51 აპლიკანტი</span>
+<span class="font-bold text-emerald-700">ახალი ნაკადი</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-emerald-500 h-full" style="width: 25%"></div>
+</div>
+<span class="text-[11px] text-outline font-medium">სორტირების რეჟიმში</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">89.5%</span>
+<span class="text-[11px] text-outline">Avg Match</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-xs">
+                    სკ
+                  </div>
+<span class="font-label-sm text-label-sm text-on-surface">სანდრო კობახიძე</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">
+                  აპლიკაციები
+                </button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="დეტალები">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: Security Operations & DevSecOps Lead (Closed / Filled) -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-outline shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                      Security Operations &amp; DevSecOps Lead
+                    </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-outline">#REQ-4075</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">apartment</span>Infra &amp; Trust</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">place</span>On-site / თბილისი</span>
+<span>•</span>
+<span class="text-tertiary font-medium">დაქირავებული: გიორგი ლომიძე</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>დასრულებული (Filled)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">event_available</span>
+<span>05 იან, 2025 — 15 თებ, 2025</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">SLA ვადა: 41 დღე</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>62 აპლიკანტი</span>
+<span class="font-bold text-tertiary">1 Hired</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-outline h-full" style="width: 100%"></div>
+</div>
+<span class="text-[11px] text-outline font-medium">წარმატებული დახურვა</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline font-bold">97.2%</span>
+<span class="text-[11px] text-outline">Final Match</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs">
+                    ნბ
+                  </div>
+<span class="font-label-sm text-label-sm text-on-surface">ნინო ბერიძე</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">
+                  რეპორტი
+                </button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="დეტალები">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bottom Status -->
+<div class="p-4 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 font-body-sm text-body-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span>ნაჩვენებია</span>
+<span class="font-bold text-on-surface">6</span>
+<span>ვაკანსია</span>
+<span class="font-bold text-on-surface">34</span>-დან
+        <span class="text-outline">|</span>
+<span class="text-outline">გვერდზე: 10, 25, 50</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-xs">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors">3</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors">4</button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Requisitions Copilot Insight Box -->
+<div class="p-4 rounded-xl bg-gradient-to-r from-primary-fixed/40 via-surface-container-low to-secondary-fixed/40 flex items-start gap-4 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">AI Pipeline Optimization Recommendation</h4>
+<span class="px-2 py-0.2 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">Live Suggestion</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>REQ-4105 (Distributed Systems Architect)</strong> პოზიციაზე შემოსულია 4 მაღალი რეიტინგის მქონე ფინალისტი. რეკომენდებულია საბოლოო ტექნიკური შეხვედრის ჩანიშვნა მომდევნო 48 საათში, რათა თავიდან იქნას აცილებული კონკურენტი შეთავაზებების რისკი.
+      </p>
+</div>
+<div class="ml-auto shrink-0 self-center">
+<button class="px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary/90 transition-colors shadow-xs">
+        ავტომატური განრიგი
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive filter tab toggle
+  document.querySelectorAll('.flex.items-center.gap-1\\.5.p-1.bg-surface-container-low button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.flex.items-center.gap-1\\.5.p-1.bg-surface-container-low button').forEach(b => {
+        b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs', 'font-bold');
+        b.classList.add('text-on-surface-variant');
+      });
+      this.classList.remove('text-on-surface-variant');
+      this.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs', 'font-bold');
+    });
+  });
+</script></main></div></body></html>

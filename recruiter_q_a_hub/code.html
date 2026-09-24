@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html lang="ka"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-container": "#8455ef",
+          "on-tertiary-container": "#93e8ff",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#23005c",
+          "primary-fixed-dim": "#c3c0ff",
+          "on-primary": "#ffffff",
+          "secondary-fixed-dim": "#d0bcff",
+          "surface-tint": "#4d44e3",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "secondary": "#6b38d4",
+          "on-secondary-container": "#fffbff",
+          "surface": "#faf8ff",
+          "outline-variant": "#c7c4d8",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "surface-variant": "#dae2fd",
+          "surface-container": "#eaedff",
+          "background": "#faf8ff",
+          "on-surface": "#131b2e",
+          "on-primary-container": "#dad7ff",
+          "primary-fixed": "#e2dfff",
+          "surface-bright": "#faf8ff",
+          "inverse-primary": "#c3c0ff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-fixed": "#0f0069",
+          "primary": "#3525cd",
+          "primary-container": "#4f46e5",
+          "on-surface-variant": "#464555",
+          "on-tertiary": "#ffffff",
+          "surface-container-highest": "#dae2fd",
+          "outline": "#777587",
+          "on-background": "#131b2e",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#00505f",
+          "inverse-on-surface": "#eef0ff",
+          "on-secondary-fixed-variant": "#5516be",
+          "error": "#ba1a1a",
+          "on-primary-fixed-variant": "#3323cc",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#001f26",
+          "secondary-fixed": "#e9ddff",
+          "surface-dim": "#d2d9f4",
+          "tertiary-fixed": "#acedff",
+          "tertiary-container": "#006a7c",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#283044",
+          "on-secondary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-sm": "0.75rem",
+          "margin-desktop": "2.5rem",
+          "margin-tablet": "2rem",
+          "space-2xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "gutter-desktop": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-2xl": "3rem",
+          "space-md": "1rem",
+          "space-xl": "2rem",
+          "margin-mobile": "1rem"
+        },
+        "fontFamily": {
+          "metric-score": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "metric-score": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[1px_0_8px_rgba(0,0,0,0.03)]"><div class="px-space-lg mb-space-xl flex items-center gap-space-sm"><div class="h-9 w-9 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-sm shadow-md">TN</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">TechNova</span><span class="font-label-sm text-label-sm text-primary tracking-wide uppercase">Global Employer</span></div></div><div class="px-space-md mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-xs">რეკრუტინგი &amp; მენეჯმენტი</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="declined-offers" href="#"><span class="font-label-md text-label-md">უარყოფილი ოფერები</span></a><a aria-current="page" class="flex items-center px-space-md py-space-xs rounded-xl transition-all bg-surface-container-high text-primary font-semibold" data-path="offer-negotiation-recruiter" href="#"><span class="font-label-md text-label-md">ოფერის მოლაპარაკება HR</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="offer-negotiation-candidate" href="#"><span class="font-label-md text-label-md">ოფერის Q&amp;A კანდიდატი</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="offer-decline-confirmation" href="#"><span class="font-label-md text-label-md">ოფერის უარყოფის დადასტურება</span></a></nav><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-high/60 flex flex-col gap-space-2xs"><span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">insights</span>Offer Acceptance Rate</span><span class="font-metric-score text-headline-sm text-primary">87.4%</span><span class="font-body-sm text-body-sm text-on-surface-variant">+4.2% წინა კვარტალთან შედარებით</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-high rounded-full shadow-[0_0_0_1px_rgba(79,70,229,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-primary tracking-wide">AI Talent Match: 94% აქტიური</span></div><div class="hidden lg:flex items-center px-space-sm py-space-2xs bg-surface-container-low rounded-lg text-outline text-label-sm gap-space-xs"><span class="material-symbols-outlined text-[16px]">domain</span><span>TechNova Global HR HQ</span></div></div><div class="flex items-center gap-space-md"><button aria-label="შეტყობინებები" class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex h-2 w-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_2px_rgba(79,70,229,0.2)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa8oT_NF20k17qLE1b2ZcHs0pFO6CWJx5g7s52uiIjy53YImoEB4Gv7v1OGFUulA7OBv-TAyui3MoHsjPM4HFBmtPeURDmoNFEhTc5_8Nur5Dxe3Rqa7-DVO4uFaxDRbwck4stLUPvRZUW9bmzueon1pERna2Ils6SUOKdFTEcmE1cSle3WR2JDP0a0mmM1ah_x9Jb4nccBmj7M6jsEAbwB1PCU4dVyo_iq6nR-eVBhUdr-FQKpYJe"/><span class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">ნინო ბერიძე</span><span class="font-label-sm text-label-sm text-outline mt-0.5">VP of Global Talent</span></div><button class="p-space-2xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="პროფილის პარამეტრები" type="button"><span class="material-symbols-outlined text-[18px]">expand_more</span></button></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full space-y-space-md">
+<!-- Breadcrumb & Status Navigation Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center flex-wrap gap-space-2xs text-outline font-label-md text-label-md">
+<span class="hover:text-on-surface transition-colors cursor-pointer">ვაკანსიები</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Staff / Principal AI Infrastructure</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="text-on-surface font-headline-sm text-headline-sm">ნიკა კალანდაძე</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold ml-space-xs">
+        #TN-OFFER-8941-REV2
+      </span>
+</div>
+<!-- Live Negotiation Expiration Pill & Actions -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-error-container/60 text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+<span>ოფერის ვადა: 47:40:00 დარჩენილი</span>
+</div>
+<button class="flex items-center gap-space-2xs px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md shadow-sm" id="meetScheduleBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">videocam</span>
+<span>სწრაფი ზარი (15 წთ)</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>დანართის გენერირება</span>
+</button>
+</div>
+</div>
+<!-- Priority Alert Banner -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary/10 via-surface-container-high to-surface-container-lowest p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="h-10 w-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-md shrink-0">
+<span class="material-symbols-outlined text-[24px]">contact_support</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">კანდიდატმა გამოგზავნა შეკითხვა ოფერის დეტალებზე</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">აქტიური მოლაპარაკება</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          შეკითხვები ეხება: <strong class="text-on-surface font-title-md">ტექნიკის ბიუჯეტს ($5,000 GPU Lab)</strong> და <strong class="text-on-surface font-title-md">RSU აქციების კვარტალურ Vesting განრიგს</strong>.
+        </p>
+</div>
+</div>
+<div class="hidden xl:flex items-center gap-space-lg">
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">ხელმოწერის ალბათობა</div>
+<div class="font-metric-score text-metric-score text-primary">89.6%</div>
+</div>
+<div class="h-8 w-px bg-outline-variant/40"></div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">სენტიმენტის დონე</div>
+<div class="font-metric-score text-metric-score text-tertiary">98% პოზიტიური</div>
+</div>
+</div>
+</div>
+<!-- Main Bento Grid (2 Columns: Conversation & Intelligence vs Candidate & Deal Controls) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- Left Column: Tabs, Message Stream, AI Copilot, Composer (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col space-y-space-md">
+<!-- Navigation Tabs Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xs shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-1 overflow-x-auto">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center gap-space-2xs shadow-sm">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>მიმდინარე ჩატი &amp; კითხვები</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary text-on-primary font-label-sm text-[10px]">2 ახალი</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px]">difference</span>
+<span>პირობების ვერსიები (REV 1 / REV 2)</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>შიდა გუნდის შენიშვნები</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-outline font-label-sm text-[10px]">4</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-space-2xs pr-space-xs">
+<span class="h-2 w-2 rounded-full bg-emerald-500 inline-block"></span>
+<span class="font-label-sm text-label-sm text-outline">დაშიფრული მოლაპარაკების არხი</span>
+</div>
+</div>
+<!-- Thread & Chat Transcript Box -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Transcript Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Close-up professional portrait of Nika Kalandadze, an experienced Georgian software engineer and AI infrastructure architect in a studio setting with modern subtle indigo lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyQ9tIR9Wdkool2m3Fr-P363KpKfMF8L8BL1TNTXnQbebMDScgVwgfBdWpWrQycgt3nlMnCJ2e8oK_MHuVHvlQtVnMjg0DkhVkBAYQ0_wxVIpfbBxpDkSQJ3UI5SeGoQ-d76otw2kuMghkSW-aSlnwzd6vr171RAsRGYyk3P6owVWkEX4mJpuMLXNm-cSl8zZfbTGEgbfgjvcQzYgpuxJ0uVs6VWEQkihmdSsNmdCtaR3ka9WqvRqV"/>
+<span class="absolute -bottom-0.5 -right-0.5 h-3.5 w-3.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="flex items-center gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">ნიკა კალანდაძე</span>
+<span class="material-symbols-outlined text-[16px] text-primary" title="ვერიფიცირებული პროფილი">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">ონლაინ • პასუხის მოლოდინში (გამოგზავნილია 22 წუთის წინ)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-all" title="ძიება ჩანაწერში">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button class="p-space-xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-all" title="PDF ექსპორტი">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+</div>
+</div>
+<!-- Messages Stream -->
+<div class="p-space-lg space-y-space-lg max-h-[460px] overflow-y-auto">
+<!-- Recruiter Original Delivery -->
+<div class="flex items-start gap-space-sm max-w-2xl">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">
+              NB
+            </div>
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">ნინო ბერიძე (HR VP)</span>
+<span class="font-body-sm text-body-sm text-outline">დღეს, 11:15</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl rounded-tl-none text-on-surface font-body-md text-body-md shadow-sm">
+                მოგესალმები ნიკა! გუნდი მოხარულია გამოგიგზავნოს ოფიციალური ოფერი #TN-OFFER-8941-REV2. პაკეტი მოიცავს $168,000 ბაზურ ხელფასს, $100,000 TechNova Equity ერთეულებსა და სრულ თავისუფლებას სამუშაო გრაფიკში. გაეცანი თანდართულ დოკუმენტს და სიამოვნებით ვუპასუხებთ ნებისმიერ შეკითხვას.
+              </div>
+</div>
+</div>
+<!-- System Event Notice -->
+<div class="flex items-center justify-center">
+<div class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-primary">mark_email_read</span>
+<span>ნიკამ გახსნა ოფერის პორტალი • 11:32</span>
+</div>
+</div>
+<!-- Candidate Incoming Clarifications (2 parts) -->
+<div class="flex items-start gap-space-sm max-w-2xl ml-auto flex-row-reverse">
+<img class="w-8 h-8 rounded-full object-cover shrink-0 shadow-sm" data-alt="Avatar portrait of Nika Kalandadze, smiling confident senior engineer looking at screen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCG4tIHdYRQTvgS0FOQjxy1gTDn1ty8FcjhgDKN4cFKMK3oeZxPoIWgTkNp8WwFO44pAUmbEKrjmcnWEJ2nHGeC3zzcwq2EMuwIY1zdydy4IecAi7HmW8S6gPloslYAEeB90YnQOTaiSz9Fv3m4ExIUvr_LgIqJzka3-l5vq-3HeMff3hmltDqSOc31GcIH2w-PqVkCWWz70ulPbVMO5Nlwu5zZ_lrrcWfyReKSiqmZ77GSXRfwNd4"/>
+<div class="space-y-space-2xs text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<span class="font-body-sm text-body-sm text-outline">დღეს, 12:45</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">ნიკა კალანდაძე</span>
+</div>
+<!-- Message Card 1 -->
+<div class="bg-primary-container text-on-primary p-space-md rounded-2xl rounded-tr-none text-left font-body-md text-body-md shadow-md space-y-space-xs">
+<p>
+                  დიდი მადლობა ნინო! ოფერი ძალიან შთამბეჭდავია და გუნდთან საუბრების შემდეგ კიდევ უფრო დავრწმუნდი, რომ პროექტი ჩემთვის იდეალურია.
+                </p>
+<p>
+                  გავეცანი პირობებს და მაქვს ორი მნიშვნელოვანი დაზუსტება:
+                </p>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest/15 space-y-1">
+<div class="font-title-md text-title-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+                    1. Hardware &amp; Deep Learning Lab Setup:
+                  </div>
+<p class="font-body-sm text-body-sm text-on-primary/90">
+                    შესაძლებელია თუ არა $5,000 გამოყოფილი ტექნიკის ბიუჯეტი გამოვიყენო პერსონალურ workstation-ში NVIDIA RTX 6000 Ada-ს ან კერძო Cloud Compute კრედიტების შესასყიდად სტანდარტული MacBook Pro-ს ჩანაცვლებით?
+                  </p>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest/15 space-y-1">
+<div class="font-title-md text-title-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pie_chart</span>
+                    2. Equity &amp; RSU Vesting განრიგი:
+                  </div>
+<p class="font-body-sm text-body-sm text-on-primary/90">
+                    ოფერის ტექსტში მითითებულია 1-წლიანი cliff (25%). არის თუ არა შესაძლებელი, რომ პირველი წლის შემდეგ დარიცხვა მოხდეს ყოველთვიურ რეჟიმში ნაცვლად კვარტალურისა?
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Negotiation Copilot Assistant Panel -->
+<div class="m-space-md p-space-md rounded-xl bg-gradient-to-br from-surface-container via-surface-container-high to-surface-container-lowest shadow-md relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>
+<span class="font-headline-sm text-headline-sm text-primary">TechNova AI Copilot რეკომენდაცია</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-bold">სიზუსტე: 96%</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">კანდიდატის ინტერესი: 94% მაღალი</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-sm leading-relaxed">
+            კანდიდატი მზადაა ხელმოსაწერად, თუ დაკმაყოფილდება ტექნიკური აღჭურვილობის მოქნილობა. <strong class="text-primary font-title-md">ტექნიკის ბიუჯეტის მოდიფიკაცია</strong> სრულად შეესაბამება ჩვენს <span class="underline decoration-primary">Senior Engineering Policy Level 4</span>-ს. რაც შეეხება Equity-ს: ყოველთვიური vesting პირველი წლის შემდეგ კომპანიის სტანდარტია REV-2 ჩარჩოში.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-space-2xs shadow hover:bg-primary-container transition-all" id="applyAiDraftBtn">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>შეთავაზებული პასუხის ჩასმა ველში</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md flex items-center gap-space-2xs shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">health_and_safety</span>
+<span>+ Family Health Care ბონუსის დამატება (+7% დახურვის შანსი)</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md flex items-center gap-space-2xs shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">calculate</span>
+<span>RSU სიმულაცია</span>
+</button>
+</div>
+</div>
+<!-- Response Composer -->
+<div class="p-space-md bg-surface-container-lowest border-t-0 space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">სწრაფი მაკროები:</span>
+<button class="macro-tag px-space-xs py-0.5 rounded-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all" data-text="ტექნიკის ბიუჯეტი ($5,000) სრულად მორგებადია შენს სამუშაო სპეციფიკაზე.">
+                ✓ Hardware Approval
+              </button>
+<button class="macro-tag px-space-xs py-0.5 rounded-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all" data-text="RSU vesting 1 წლის შემდეგ გადადის ყოველთვიურ განაწილებაზე.">
+                ✓ Monthly Vesting OK
+              </button>
+<button class="macro-tag px-space-xs py-0.5 rounded-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all" data-text="შეგვიძლია ხვალ 14:00-ზე მოვაწყოთ მოკლე სინქრონიზაცია Google Meet-ში?">
+                ✓ Call Invitation
+              </button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">ნინო ბერიძის სახელით</span>
+</div>
+<div class="relative">
+<textarea class="w-full p-space-md rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-inner font-body-md text-body-md transition-all resize-none" id="replyMessageTextarea" placeholder="ჩაწერეთ ოფიციალური პასუხი კანდიდატისთვის ან გამოიყენეთ AI Copilot..." rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-2xs">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-all" title="დოკუმენტის მიმაგრება (PDF/DOCX)">
+<span class="material-symbols-outlined text-[22px]">attach_file</span>
+</button>
+<button class="p-space-xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-all" title="კონტრაქტის დამატებითი მუხლი">
+<span class="material-symbols-outlined text-[22px]">post_add</span>
+</button>
+<div class="px-space-xs py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">description</span>
+<span>Offer_Addendum_Rev2.pdf (მომზადებული)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all">
+                შენახვა შავის სახით
+              </button>
+<button class="px-space-lg py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-md flex items-center gap-space-2xs transition-all" id="sendReplyBtn">
+<span>კანდიდატისთვის პასუხის გაგზავნა</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Profile Snapshot, Deal Terms, Hiring Squad, Fast Actions (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col space-y-space-md">
+<!-- Candidate Profile Snapshot Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-14 h-14 rounded-2xl object-cover shadow-md" data-alt="Candidate Nika Kalandadze high-resolution headshot, confident Georgian AI engineering leader with smart modern glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsRy9Himz_KqmTuzUs9SiuFxhZLAQXHaIUtAzfp0vlv59aChTwjSCKHeSvK6hmnuVfbhPr8g7XrtoSUDUBdsdRu15GR_w3-Y3Rj1b8iJTlGQB6bupqLmfD02aKixjhg_C9AkNnGzhmUaDSkpqdZqofm39NcK4QJm9NVrwQfuCo7jaUTlDVSGDwLcFNG-jvr1ILryKH5efxGJcFHnDC7bpvIwisf0FEtfMxL3VRgQ-qovfNldtKt1D8"/>
+<div>
+<div class="flex items-center gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">ნიკა კალანდაძე</h2>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">თბილისი, საქართველო (Remote OK)</p>
+<span class="inline-block mt-1 px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+                Staff AI Infrastructure
+              </span>
+</div>
+</div>
+<!-- Circular Metric Match Score -->
+<div class="flex flex-col items-center">
+<div class="relative w-12 h-12 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="96, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm text-on-surface font-extrabold">96</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-tight mt-0.5">AI Match</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">გამოცდილება</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">11 წელი (AI &amp; HPC)</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">მიმდინარე პოზიცია</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Lead Architect @ Synapse</span>
+</div>
+</div>
+</div>
+<!-- Active Offer Parameters REV-2 Summary -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">attach_money</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">ოფერის პირობები (REV 2)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/40 px-space-xs py-0.5 rounded-full font-bold">
+            ბიუჯეტის ფარგლებში
+          </span>
+</div>
+<div class="space-y-space-xs">
+<!-- Base Pay -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">წლიური ბაზური ხელფასი</span>
+<span class="font-body-sm text-body-sm text-outline">დარიცხული ყოველთვიურად ($14,000/თვე)</span>
+</div>
+<span class="font-metric-score text-headline-sm text-on-surface">$168,000</span>
+</div>
+<!-- RSU Equity -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">TechNova Equity (RSU)</span>
+<span class="font-body-sm text-body-sm text-outline">4-წლიანი განრიგი (25% Cliff)</span>
+</div>
+<span class="font-metric-score text-headline-sm text-primary">$100,000</span>
+</div>
+<!-- Sign-on & Lab -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sign-on &amp; HW Setup Lab</span>
+<span class="font-body-sm text-body-sm text-outline">ერთჯერადი პირველ თვეს ($10k + $5k)</span>
+</div>
+<span class="font-metric-score text-headline-sm text-tertiary">$15,000</span>
+</div>
+<!-- Work Mode -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">სამუშაო ფორმატი</span>
+<span class="font-body-sm text-body-sm text-outline">მოქნილი საათები • UTC+4 / CET</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface bg-surface-container px-space-xs py-1 rounded">100% Fully Remote</span>
+</div>
+</div>
+<!-- Total Year 1 Value Visual Progress -->
+<div class="pt-space-xs space-y-space-2xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline">პირველი წლის საერთო ღირებულება (TC):</span>
+<span class="text-primary font-bold font-title-md">$208,000 USD</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 80%" title="Base Pay"></div>
+<div class="h-full bg-secondary" style="width: 12%" title="RSU Year 1"></div>
+<div class="h-full bg-tertiary-fixed-dim" style="width: 8%" title="Sign-on Bonus"></div>
+</div>
+</div>
+</div>
+<!-- Team Collaboration & Approvals Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">ჰაირინგ გუნდის თანხმობა</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">2/2 დადასტურებულია</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Member 1 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Levan Kakhadze, Georgian Principal AI Architect, mid-40s with focused gaze and dark engineering attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP5hVZhnehE1mzUgbT3JzDZcPKBq7kBAGRwGtQA5Kppd0yX5Z3FKsyEYMeNjbUYNFtiR9_L0nlSqg71iSVQWWvh_3m4MzzEmVOUzp9YSMPdc_VcF-_RI5wh8cHYRW06mUp_7GMK7FMca8wVpt3U4-OAtESZ0LZXhLsEvPdb5FSdx371Sp04MlkBxgx1-7oLB_xQAQKnO_-Gda5vKpjRdeOShdOUJmx6ijpnqdprP1XmTsHl0auOE2n"/>
+<span class="material-symbols-outlined text-[14px] text-emerald-600 bg-surface-container-lowest rounded-full absolute -bottom-1 -right-1">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">ლევან კახაძე</span>
+<span class="font-body-sm text-body-sm text-outline">Lead AI Architect • „ტექნიკის ბიუჯეტი OK-ია”</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold">Approved</span>
+</div>
+<!-- Member 2 -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Davit Eristavi, VP of Engineering, smart executive portrait with warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpqfFhLsOh_dYx6DKeZPYREHiv1GvaGS-I65BkF5s9P1Tvc5M5Vos5e5Ag_QpfxMNJ4tgWKGKsawL2qz4kujpcUWwAFoMBzDwvuIjSh05s7y3Cw6QWlj2UEtbGHBw--v-2s27iEguHmIcCVUfEjubBj5FOxLBiU1LYsvONRRPn7TvDG0pz3dDrxB_ZE8zp9geudoTC6uBGTZzYxUcSHiXjQ90IchcfG4shITwjnIMTZvWPEIULz534"/>
+<span class="material-symbols-outlined text-[14px] text-emerald-600 bg-surface-container-lowest rounded-full absolute -bottom-1 -right-1">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">დავით ერისთავი</span>
+<span class="font-body-sm text-body-sm text-outline">VP of Engineering • „RSU ვესტინგი დასაშვებია”</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold">Approved</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-2xs">
+<input class="w-full px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface text-label-md font-label-md focus:outline-none focus:bg-surface-container-high transition-all" placeholder="@ტეგი შიდა კომენტარისთვის..." type="text"/>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">add_comment</span>
+</button>
+</div>
+</div>
+<!-- Contingency & Fallback Strategy -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">სარეზერვო სცენარი</span>
+<span class="material-symbols-outlined text-outline text-[18px]">shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          თუ მოლაპარაკება 48 საათში ვერ დასრულდება ხელმოწერით, AI სისტემა მზადაა გაააქტიუროს პაიპლაინის მომდევნო კანდიდატი:
+        </p>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-sm">
+              GA
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">გიორგი ასათიანი</span>
+<span class="font-body-sm text-body-sm text-outline">91% AI Match • Standby რეჟიმში</span>
+</div>
+</div>
+<button class="px-space-xs py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all">
+            პროფილი
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Notification Toast (Hidden by default) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm p-space-md rounded-xl bg-inverse-surface text-inverse-on-surface shadow-2xl" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-inverse-on-surface" id="toastTitle">შეტყობინება</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface/80" id="toastMessage">მოქმედება წარმატებით შესრულდა.</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick macro filler interaction
+    const macros = document.querySelectorAll('.macro-tag');
+    const textarea = document.getElementById('replyMessageTextarea');
+    const applyAiDraftBtn = document.getElementById('applyAiDraftBtn');
+    const sendBtn = document.getElementById('sendReplyBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const meetBtn = document.getElementById('meetScheduleBtn');
+
+    function showToast(title, msg) {
+      toastTitle.textContent = title;
+      toastMessage.textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 3800);
+    }
+
+    macros.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.getAttribute('data-text');
+        if (textarea.value) {
+          textarea.value += ' ' + text;
+        } else {
+          textarea.value = text;
+        }
+        textarea.focus();
+      });
+    });
+
+    // AI Copilot response inject
+    if (applyAiDraftBtn) {
+      applyAiDraftBtn.addEventListener('click', () => {
+        textarea.value = "გამარჯობა ნიკა, სიამოვნებით გაცნობებ, რომ შენი ორივე მოთხოვნა სრულად შეთანხმებულია ხელმძღვანელობასთან:\n\n1. აპარატურის $5,000 ბიუჯეტი შეგიძლია თავისუფლად მიმართო როგორც NVIDIA workstation-ის აწყობაზე, ისე შენთვის სასურველ AI Cloud კრედიტებზე.\n2. RSU ვესტინგის განრიგი პირველი წლის (25% Cliff) გასვლის შემდეგ ავტომატურად გადავა ყოველთვიურ დარიცხვაზე, რაც უკვე ასახულია განახლებულ #TN-OFFER-8941-REV2 დანართში.\n\nგელოდებით ჩვენს გუნდში!";
+        textarea.focus();
+        showToast("AI Copilot", "პასუხის პროექტი ავტომატურად ჩაჯდა ველში.");
+      });
+    }
+
+    // Send action
+    if (sendBtn) {
+      sendBtn.addEventListener('click', () => {
+        if (!textarea.value.trim()) {
+          showToast("გაფრთხილება", "გთხოვთ შეიყვანოთ საპასუხო ტექსტი.");
+          return;
+        }
+        showToast("პასუხი გაიგზავნა", "ნიკა კალანდაძეს ეცნობა შეთანხმებული პირობები & კონტრაქტის დანართი.");
+        textarea.value = '';
+      });
+    }
+
+    // Fast Google Meet call
+    if (meetBtn) {
+      meetBtn.addEventListener('click', () => {
+        showToast("Google Meet მოწვევა", "15-წუთიანი მოწვევა გაეგზავნა ნიკა კალანდაძეს (Google Calendar Sync).");
+      });
+    }
+  })();
+</script></main></div></body></html>

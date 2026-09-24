@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html lang="ka"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#eaedff",
+          "on-secondary": "#ffffff",
+          "secondary": "#6b38d4",
+          "primary-container": "#4f46e5",
+          "on-primary-fixed": "#0f0069",
+          "surface": "#faf8ff",
+          "surface-bright": "#faf8ff",
+          "outline-variant": "#c7c4d8",
+          "tertiary-container": "#006a7c",
+          "on-secondary-container": "#fffbff",
+          "surface-dim": "#d2d9f4",
+          "on-background": "#131b2e",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "inverse-on-surface": "#eef0ff",
+          "surface-container-low": "#f2f3ff",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#c3c0ff",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed": "#23005c",
+          "surface-variant": "#dae2fd",
+          "inverse-surface": "#283044",
+          "secondary-fixed-dim": "#d0bcff",
+          "secondary-fixed": "#e9ddff",
+          "on-surface-variant": "#464555",
+          "outline": "#777587",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-container": "#dad7ff",
+          "on-secondary-fixed-variant": "#5516be",
+          "background": "#faf8ff",
+          "inverse-primary": "#c3c0ff",
+          "surface-tint": "#4d44e3",
+          "on-surface": "#131b2e",
+          "primary": "#3525cd",
+          "on-tertiary-fixed": "#001f26",
+          "on-tertiary-container": "#93e8ff",
+          "secondary-container": "#8455ef",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "error-container": "#ffdad6",
+          "error": "#ba1a1a",
+          "surface-container-high": "#e2e7ff",
+          "on-primary-fixed-variant": "#3323cc",
+          "tertiary-fixed": "#acedff",
+          "tertiary": "#00505f",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed": "#e2dfff",
+          "on-primary": "#ffffff",
+          "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-tablet": "2rem",
+          "margin-desktop": "2.5rem",
+          "gutter-desktop": "1.5rem",
+          "margin-mobile": "1rem",
+          "space-sm": "0.75rem",
+          "space-2xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-md": "1rem",
+          "space-2xl": "3rem",
+          "space-xs": "0.5rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "metric-score": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "metric-score": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "display-hero-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors" data-path="candidate-hub" href="#"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span class="font-label-md text-label-md hidden sm:inline">პორტალზე დაბრუნება</span></a><div class="h-4 w-[1px] bg-outline-variant/60 hidden sm:block"></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-2xs rounded-lg"><span class="font-label-sm text-label-sm text-outline uppercase font-semibold">PIN:</span><span class="font-label-md text-label-md text-on-surface font-mono font-bold tracking-wider">849-204</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-high rounded-full"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span></span><span class="font-label-sm text-label-sm text-on-surface font-mono font-semibold tracking-wide">00:28:44</span><span class="font-label-sm text-label-sm text-outline hidden md:inline">პირდაპირი ეთერი</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container rounded-full"><div class="flex -space-x-2"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] font-bold">AI</span><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-on-secondary text-[10px] font-bold">HR</span><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-tertiary-container text-on-secondary text-[10px] font-bold">ME</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium ml-1">3 მონაწილე</span></div><div class="flex items-center gap-space-2xs bg-surface-container-low p-space-2xs rounded-xl shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)]"><button class="p-space-2xs rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="მიკროფონი ჩართულია" type="button"><span class="material-symbols-outlined text-[20px]">mic</span></button><button class="p-space-2xs rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="კამერა ჩართულია" type="button"><span class="material-symbols-outlined text-[20px]">videocam</span></button></div><a class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-xl bg-error text-on-error hover:bg-error/90 font-label-md text-label-md transition-all shadow-[0_2px_8px_rgba(186,26,26,0.25)]" data-path="candidate-hub" href="#"><span class="material-symbols-outlined text-[18px]">call_end</span><span class="hidden sm:inline">სესიის დატოვება</span></a></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full gap-space-md">
+<!-- Top Session Context & Telemetry Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm">TN</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">TechNova Global</h1>
+<span class="px-space-xs py-[2px] rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Tech Lead Round</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senior Cloud &amp; AI Infrastructure Architect • კანდიდატი: <span class="font-semibold text-on-surface">ნიკა კალანდაძე</span></p>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs ml-space-sm pl-space-sm border-l border-surface-container-high">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<span class="font-label-sm text-label-sm text-tertiary">E2E DTLS-SRTP დაშიფრული</span>
+</div>
+</div>
+<!-- Telemetry & Active Stage Indicators -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ეტაპი 2 / 3: კოდი &amp; სისტემური არქიტექტურა</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-score text-metric-score text-primary">24:18</span>
+<span class="font-label-sm text-label-sm text-outline">/ 45:00 წთ</span>
+</div>
+</div>
+</div>
+<!-- Network Quality Metric Pill -->
+<div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-lg text-on-surface">
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-3 rounded-full bg-tertiary-container"></span>
+<span class="w-1.5 h-4 rounded-full bg-tertiary-container"></span>
+<span class="w-1.5 h-5 rounded-full bg-tertiary-container"></span>
+</div>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">1080p 60fps</span>
+<span class="text-outline text-label-sm font-label-sm block">14ms latency • 0% loss</span>
+</div>
+</div>
+<!-- Security / AI Act Tag -->
+<div class="hidden sm:flex items-center gap-space-2xs bg-surface-container-high px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">EU AI Act Art. 14 Neutral</span>
+</div>
+</div>
+</div>
+<!-- Main Multi-Column Split Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md w-full">
+<!-- Left / Center: Interactive Code & Architecture Workbench (7 Cols on desktop) -->
+<section class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-sm min-w-0">
+<!-- Code Editor Window Frame -->
+<div class="bg-[#0f172a] text-[#e2e8f0] rounded-xl overflow-hidden shadow-xl flex flex-col">
+<!-- Editor Top Tabs & Toolbar -->
+<div class="flex items-center justify-between bg-[#1e293b] px-space-sm pt-space-xs border-b border-[#334155]">
+<div class="flex items-center gap-space-2xs overflow-x-auto">
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-t-lg bg-[#0f172a] text-white font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>vllm_autoscaler.go</span>
+<span class="material-symbols-outlined text-[14px] text-slate-400 hover:text-white">close</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-t-lg bg-transparent text-slate-400 hover:text-white font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">token</span>
+<span>architecture.tf</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-t-lg bg-transparent text-slate-400 hover:text-white font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">dns</span>
+<span>k8s-daemonset.yaml</span>
+</button>
+</div>
+<!-- Collaborative Live Presence Badges in Editor -->
+<div class="hidden sm:flex items-center gap-space-xs pb-space-xs">
+<div class="flex items-center gap-1 bg-[#0284c7]/20 text-[#38bdf8] px-space-xs py-[2px] rounded font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#38bdf8] animate-ping"></span>
+<span>ლევან კ. (ხაზი 42)</span>
+</div>
+<div class="flex items-center gap-1 bg-secondary/30 text-secondary-fixed px-space-xs py-[2px] rounded font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span>შენ (ხაზი 58)</span>
+</div>
+</div>
+</div>
+<!-- Code Workspace Area with Line Numbers & Real Syntax Content -->
+<div class="p-space-md font-mono text-[13px] leading-[22px] overflow-x-auto min-h-[460px] bg-[#090d16] text-[#cbd5e1]">
+<div class="flex gap-space-md">
+<!-- Line Numbers -->
+<div class="text-slate-600 select-none text-right flex flex-col font-mono text-xs pr-space-xs">
+<span>38</span><span>39</span><span>40</span><span>41</span><span class="text-[#38bdf8] font-bold">42</span><span>43</span><span>44</span><span>45</span><span>46</span><span>47</span><span>48</span><span>49</span><span>50</span><span>51</span><span>52</span><span>53</span><span>54</span><span>55</span><span>56</span><span>57</span><span class="text-secondary-fixed font-bold">58</span><span>59</span><span>60</span><span>61</span>
+</div>
+<!-- Code Lines with Syntax Coloring -->
+<div class="flex-1">
+<p><span class="text-[#818cf8]">package</span> autoscaler</p>
+<p class="text-slate-500">// VLLMDistributedPodAutoscaler manages real-time GPU cluster scale-out</p>
+<p><span class="text-[#818cf8]">type</span> <span class="text-[#38bdf8]">ClusterController</span> <span class="text-[#818cf8]">struct</span> {</p>
+<p class="pl-4">mu          sync.RWMutex</p>
+<p class="pl-4 relative bg-[#0284c7]/15 rounded px-1">
+                k8sClient   *kubernetes.Clientset
+                <span class="absolute right-2 top-0 text-[10px] bg-[#0284c7] text-white px-1 rounded uppercase tracking-wider font-bold">ლევან კახაძე Cursor</span>
+</p>
+<p class="pl-4">gpuNodes    map[string]*vLLMWorkerNode</p>
+<p class="pl-4">latencyThresholdMs int64</p>
+<p>}</p>
+<p class="mt-2"><span class="text-[#818cf8]">func</span> (c *<span class="text-[#38bdf8]">ClusterController</span>) <span class="text-[#facc15]">EvaluateQueueSaturation</span>(ctx context.Context, metrics *<span class="text-[#38bdf8]">InferenceTelemetry</span>) <span class="text-[#38bdf8]">ScaleDecision</span> {</p>
+<p class="pl-4">c.mu.Lock()</p>
+<p class="pl-4"><span class="text-[#818cf8]">defer</span> c.mu.Unlock()</p>
+<p class="pl-4 text-slate-500">// PagedAttention KV cache occupancy check before triggering cold replica</p>
+<p class="pl-4"><span class="text-[#f472b6]">if</span> metrics.KVCacheSaturationRatio &gt; <span class="text-[#fb923c]">0.88</span> || metrics.P99LatencyMs &gt; c.latencyThresholdMs {</p>
+<p class="pl-8 text-slate-400">targetReplicas := c.calculateTargetPods(metrics.PendingPrompts)</p>
+<p class="pl-8 text-slate-400">log.Printf(<span class="text-[#34d399]">"[SCALE_EVENT] Saturation reached: %.2f, warming GPU instances..."</span>, metrics.KVCacheSaturationRatio)</p>
+<p class="pl-8"><span class="text-[#818cf8]">return</span> <span class="text-[#38bdf8]">ScaleDecision</span>{Action: <span class="text-[#34d399]">"SCALE_UP"</span>, DesiredReplicas: targetReplicas, WarmupProfile: <span class="text-[#34d399]">"L40S-FP8"</span>}</p>
+<p class="pl-4">}</p>
+<p class="pl-4 mt-1 relative bg-secondary/20 rounded px-1">
+<span class="text-[#818cf8]">return</span> <span class="text-[#38bdf8]">ScaleDecision</span>{Action: <span class="text-[#34d399]">"STEADY"</span>, DesiredReplicas: len(c.gpuNodes)}
+                <span class="absolute right-2 top-0 text-[10px] bg-secondary-container text-on-secondary-container px-1 rounded uppercase tracking-wider font-bold">შენ (კანდიდატი)</span>
+</p>
+<p>}</p>
+<p class="text-slate-500">// TODO: Triton repository sync verification under &lt; 14ms</p>
+</div>
+</div>
+</div>
+<!-- Integrated Interactive Micro-Terminal / Test Runner Panel -->
+<div class="bg-[#0b1120] border-t border-[#1e293b] p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">terminal</span>
+<span class="font-label-sm text-label-sm text-slate-300">ტესტების გარემო • go test -race ./autoscaler/...</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-[2px] rounded bg-emerald-500/20 text-emerald-300 font-label-sm text-label-sm font-semibold">12/12 ტესტი წარმატებულია</span>
+<button class="flex items-center gap-1 px-space-sm py-1 bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>კოდის გაშვება</span>
+</button>
+</div>
+</div>
+<div class="bg-[#030712] rounded p-space-xs font-mono text-[11px] text-slate-300 flex flex-col gap-1">
+<p class="text-slate-400">=== RUN   TestEvaluateQueueSaturation_HighLoadThreshold</p>
+<p class="text-emerald-400">--- PASS: TestEvaluateQueueSaturation_HighLoadThreshold (0.04s) [Alloc: 4.2MB/s, P99: 11.8ms]</p>
+<p class="text-slate-400">=== RUN   TestKVCacheDefragmentationWithPagedAttention</p>
+<p class="text-emerald-400">--- PASS: TestKVCacheDefragmentationWithPagedAttention (0.09s) [Zero Mutex Contention Detected]</p>
+<p class="text-tertiary-fixed-dim font-semibold">PASS: ok  talentai/workloads/vllm/autoscaler 0.134s (race detector enabled)</p>
+</div>
+</div>
+</div>
+<!-- Quick Context / Prompt Card from Interviewer -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-space-xs rounded-xl bg-primary-fixed text-on-primary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">არქიტექტურული ამოცანა #2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">GPU Memory Fragmentation &amp; Cold-Start Mitigation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              ახსენით, როგორ უზრუნველყოფს მოცემული მოდელი კლასტერის მასშტაბირებას ტრაფიკის მკვეთრი ზრდისას ისე, რომ inference P99 ლატენცია არ გასცდეს 14ms ზღვარს.
+            </p>
+</div>
+</div>
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">draw</span>
+<span>დაფის გახსნა</span>
+</button>
+</div>
+</section>
+<!-- Right Column: Video Feeds, Live Transcript & Copilot (5 Cols on desktop) -->
+<aside class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-md min-w-0">
+<!-- Video Grid Container (3 Feeds) -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs pb-space-2xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px] text-primary">videocam</span>
+            პირდაპირი ვიდეო ნაკადი (3)
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Grid view</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Feed 1: Levan Kakhadze (Interviewer - Active Speaker) -->
+<div class="col-span-2 relative aspect-[16/9] rounded-lg overflow-hidden bg-surface-container-highest shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up professional portrait shot of Levan Kakhadze, a 38-year-old Georgian senior tech lead engineer wearing glasses and dark tech hoodie in a modern ambient-lit software engineering lab studio, softly illuminated with violet and cyan background glows, smiling and actively explaining code." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro_f73BbdUVl0xZj0LBGXv9lv7DMOFxSHgvfu5Q9JD1id0Qg5T7PD-r_swVmfh6P4LC1-_q3tBP8Ry9dKLS7Wp9YjyCiYBgZ9Ixy6t0VY4pgPLUr9AeNmj82IfvppprVi8AND3W8BMxXRO24-5PG0Zl0naz3FJZjsvnjrptq05Z9UIb-uuPOMFkyIIvcieeVQ-vd1yf0jqq9ryBAixog2rzj-EBLz33fFqC_NRhbZDTIJsRLDLor_"/>
+<!-- Speaking Indicator Halo -->
+<div class="absolute inset-0 ring-2 ring-primary pointer-events-none rounded-lg"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-black/60 backdrop-blur-md px-space-xs py-1 rounded-md text-white text-[12px]">
+<div class="flex items-center gap-space-2xs">
+<span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-semibold truncate max-w-[130px]">ლევან კახაძე</span>
+<span class="text-slate-300 text-[10px] hidden sm:inline">(Lead Interviewer)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-emerald-400">volume_up</span>
+<span class="font-mono text-[10px] text-emerald-300">საუბრობს...</span>
+</div>
+</div>
+</div>
+<!-- Feed 2: Candidate Nika Kalandadze (You) -->
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Headshot of Nika Kalandadze, a focused 30-year-old software architect candidate wearing a minimal navy t-shirt with studio microphone visible, warm professional office lighting, sharp focus with soft background bokeh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWyF8SUqvPIUh-1JBTRZVvxsHT-wL95PzEu6qlBxeWmfON1lFV0ssb8Mfd5e8jXHK7aoGMsJLI18Q6e-VebY3QolL_79szf5szoJJR1FTtctl2ZeJySnhUkgKiqVWEN8G382sTp3rw7JGW8IsVqGO8PA52-3lZ1eCNUULJmwcw36980MtSI-CmQy21w73IwoxU7hajfhnbxk0FghPt_QAC0eI2dyxU3S45-xAQqEygep4_rXSTmfNW"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-black/60 backdrop-blur-md px-space-xs py-0.5 rounded text-white text-[11px]">
+<span class="truncate">შენ (ნიკა)</span>
+<span class="material-symbols-outlined text-[13px] text-emerald-400">mic</span>
+</div>
+</div>
+<!-- Feed 3: Nino Beridze (HR / Observational Partner) -->
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Medium portrait shot of Nino Beridze, a Georgian female HR director in business smart attire, taking notes with a stylus on tablet in an airy glass architectural office with natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADuYWK4gR5aBfvKS_3IA4EDYeHzCFAf0l1j23rlHQqgHCJgI4xy4NnjsMHzFantXH55hECP_olP0mUeq0B6242mtcPNn4m5Qazbe-CE-_-PHmsK3cxcGtEFawIToRNnqRrR8WLvhv8J0oMJRs7xaF0orpUGE4kdP-Yu-EIlNPLdbgogmlK7UxMVysXrGFgBba7OiP7t4Q06VffztzgKM7fhbzZth6obCUVswJDdYFqjwJhlNoiMooJ"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-black/60 backdrop-blur-md px-space-xs py-0.5 rounded text-white text-[11px]">
+<span class="truncate">ნინო ბერიძე</span>
+<span class="material-symbols-outlined text-[13px] text-slate-400">mic_off</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Speech-to-Text Transcript Feed -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">record_voice_over</span>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">ცოცხალი ტრანსკრიფცია</h3>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">ქართული (GeoASR v4)</span>
+</div>
+<div class="flex flex-col gap-space-xs max-h-48 overflow-y-auto pr-1">
+<!-- Dialogue 1 -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">ლევან კახაძე</span>
+<span class="font-mono text-[10px] text-outline">24:05</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              "ნიკა, მოცემულ vLLM კოდში როგორ ავირიდოთ თავიდან Cold-Start ლატენცია, როცა Triton ინსტანსები მოითხოვს მოდელის წონების თავიდან ჩატვირთვას VRAM-ში?"
+            </p>
+</div>
+<!-- Dialogue 2 (Active speech) -->
+<div class="bg-secondary-fixed/30 p-space-xs rounded-lg flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">ნიკა კალანდაძე (შენ)</span>
+<span class="font-mono text-[10px] text-outline">24:12</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              "აქ გადამწყვეტია წინასწარ გაცხელებული (warm-pool) L40S კვანძები და PagedAttention ბუფერის გაზიარება shared memory IPC-ით..."
+            </p>
+</div>
+</div>
+</div>
+<!-- Candidate TalentAI Copilot Module (Authorized Transparent Assistance) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[11px]">AI</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">TalentAI Copilot • გამჭვირვალე მხარდაჭერა</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm font-bold">აქტიური</span>
+</div>
+<!-- Architectural Memory Anchor -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wide block mb-1">საკვანძო საარქიტექტურო აქცენტები</span>
+<ul class="font-body-sm text-body-sm text-on-surface flex flex-col gap-1 list-disc pl-4">
+<li><span class="font-semibold text-primary">Triton Model Repo Caching:</span> NVMe-oF გამოყენება PCIe bottleneck-ის ასარიდებლად.</li>
+<li><span class="font-semibold text-primary">PagedAttention:</span> VRAM ფრაგმენტაციის 96%-ით შემცირება.</li>
+<li><span class="font-semibold text-primary">GPU Warm-Pooling:</span> მინიმუმ 2 სარეზერვო Pod-ის შენარჩუნება Ready სტატუსში.</li>
+</ul>
+</div>
+<!-- Realtime Confidence & Speech Metrics -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline block">მეტყველების ტემპი</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-metric-score text-headline-sm text-tertiary-container">132</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">სიტყვა/წთ</span>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary block">იდეალური დიაპაზონი</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline block">ტერმინოლოგიური სიზუსტე</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-metric-score text-headline-sm text-primary">98.4%</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary block">მაღალი თანხვედრა როლთან</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Bottom Floating Meeting Dock -->
+<footer class="w-full bg-surface-container-lowest p-space-sm rounded-xl shadow-md flex flex-wrap items-center justify-between gap-space-md mt-space-xs">
+<!-- Audio / Video Input Devices Context -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">mic</span>
+<span>Shure MV7+ (USB-C)</span>
+</div>
+<div class="h-4 w-[1px] bg-outline-variant/60 hidden sm:block"></div>
+<div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">videocam</span>
+<span>FaceTime HD 1080p</span>
+</div>
+</div>
+<!-- Center Control Actions -->
+<div class="flex items-center gap-space-xs">
+<!-- Mic Toggle -->
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-tertiary">mic</span>
+<span class="hidden sm:inline">მიკროფონი</span>
+</button>
+<!-- Video Toggle -->
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-tertiary">videocam</span>
+<span class="hidden sm:inline">კამერა</span>
+</button>
+<!-- Screen Share Button -->
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-xl bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">screen_share</span>
+<span class="hidden sm:inline">გაზიარებულია</span>
+</button>
+<!-- Whiteboard / Architecture Pad -->
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">dashboard_customize</span>
+<span class="hidden md:inline">დაფა</span>
+</button>
+<!-- Chat Pill -->
+<button class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-all">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+</div>
+<!-- End / Leave Interview Session Action -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs rounded-xl bg-error text-on-error hover:bg-error/90 font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>ინტერვიუს დასრულება</span>
+</button>
+</div>
+</footer>
+</div></main></body></html>

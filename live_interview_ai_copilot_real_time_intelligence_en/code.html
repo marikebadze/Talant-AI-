@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-lowest": "#ffffff",
+          "on-background": "#131b2e",
+          "surface-tint": "#4d44e3",
+          "surface-container": "#eaedff",
+          "outline-variant": "#c7c4d8",
+          "on-surface-variant": "#464555",
+          "secondary-fixed-dim": "#d0bcff",
+          "primary-container": "#4f46e5",
+          "secondary-fixed": "#e9ddff",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "on-secondary-fixed": "#23005c",
+          "background": "#faf8ff",
+          "on-primary": "#ffffff",
+          "secondary-container": "#8455ef",
+          "tertiary": "#00505f",
+          "surface-container-high": "#e2e7ff",
+          "surface": "#faf8ff",
+          "surface-container-low": "#f2f3ff",
+          "inverse-on-surface": "#eef0ff",
+          "secondary": "#6b38d4",
+          "primary": "#3525cd",
+          "on-primary-fixed-variant": "#3323cc",
+          "on-primary-container": "#dad7ff",
+          "on-tertiary-container": "#93e8ff",
+          "primary-fixed-dim": "#c3c0ff",
+          "on-error": "#ffffff",
+          "on-primary-fixed": "#0f0069",
+          "tertiary-container": "#006a7c",
+          "on-secondary-container": "#fffbff",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "on-secondary-fixed-variant": "#5516be",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#e2dfff",
+          "error-container": "#ffdad6",
+          "surface-dim": "#d2d9f4",
+          "surface-variant": "#dae2fd",
+          "inverse-surface": "#283044",
+          "surface-bright": "#faf8ff",
+          "tertiary-fixed": "#acedff",
+          "surface-container-highest": "#dae2fd",
+          "on-surface": "#131b2e",
+          "inverse-primary": "#c3c0ff",
+          "error": "#ba1a1a",
+          "outline": "#777587",
+          "on-tertiary-fixed": "#001f26",
+          "on-error-container": "#93000a",
+          "on-tertiary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-tablet": "2rem",
+          "space-2xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-2xl": "3rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "1.5rem",
+          "margin-desktop": "2.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.5rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "body-lg": ["Inter"],
+          "metric-score": ["Plus Jakarta Sans"],
+          "title-md": ["Inter"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "display-hero": ["Plus Jakarta Sans"],
+          "display-hero-mobile": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "label-sm": ["Inter"],
+          "body-sm": ["Inter"],
+          "label-md": ["Inter"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "body-md": ["Inter"]
+        },
+        "fontSize": {
+          "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+          "metric-score": ["28px", {"lineHeight": "32px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+          "display-hero": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "display-hero-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-xs"><img alt='Modern geometric vector logo for AI HR platform "TalentAI". An abstract glowing neural node interconnected with human profile silhouette or dual helix, sharp indigo and cyan gradient, sleek minimalist technology icon, dark transparent background, high precision.. Design context: - Primary color: #4f46e5
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UUVrTjMQv_9_6czxxGWjFXYQsKJhhpjE_rN6Rsh1_DODLl2K2L43HksW7zEaVhys1q9z0xnNqQwyaII0TRBEAn_Wcxhl722gxeuo_LRmbFAtlSjhswTPTWu0xCgNpElS2vuTgAHPXcEc9VqqcIxYN_e1l-EvD_5SMi9w-6hXnF7WG4MBWvdg0TrNsZIk0gPCHapcHhOvC0lmDSQvXhr2C3QAO4pDjsnIKa4XnF5XjDW027dBFe8LLpjOM"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Talent<span class="text-tertiary-container">AI</span></span></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-title-md"><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-title-md text-title-md" data-path="jobs-search" href="#">Jobs &amp; Search</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-title-md text-title-md" data-path="candidate-portal" href="#">Candidate Portal</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-colors bg-surface-container text-primary font-title-md" data-path="employer-studio" href="#">Employer Studio</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-title-md text-title-md" data-path="admin-analytics" href="#">Admin &amp; Analytics</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-low text-tertiary shadow-[0_0_0_1px_rgba(0,106,124,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-tertiary">AI Core: 94% Active</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface cursor-pointer text-on-surface-variant transition-colors"><span class="font-label-md text-label-md">🌐 EN · USD ($)</span><span class="material-symbols-outlined text-label-md leading-none">expand_more</span></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined leading-none">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_2px_rgba(79,70,229,0.2)]" src="https://lh3.googleusercontent.com/aida/AEtjO1WbiupGlrNh8Ew96c94GEs746d79nnX3jv0llit1Nvnhts9sJyZzyLfqVHh44crdjRnxL6c2o4NfQUgHgi913q8sQNPeh0rkGnQ7RjhmqbYSEuyqxYbppDoeHvhaqqqWq0CISTrCi-at9qivs6bECndng0gIb0nnsCp_zvcKsOQy-vbssiq4sHegzUWPRyeJ4TMbEbYGGHoUR4ruYmLWb96aDXjziWHtSAlggRQ6KI5pHgWm-kvVME76p4"/><div class="hidden md:flex flex-col text-left"><span class="font-title-md text-title-md leading-tight text-on-surface">Nino Beridze</span><span class="font-label-sm text-label-sm text-on-surface-variant">HR Director</span></div></div></div></div></header><main class="w-full pt-16 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Top Utility Bar: Meeting Identity & Session Control -->
+<div class="w-full px-margin-desktop py-space-sm bg-surface-container-lowest shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left: Status & Profile Details -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-error/10 text-error">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-error"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">LIVE STREAM &amp; AI INTELLIGENCE</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/40"></div>
+<div class="flex items-center gap-space-xs font-mono font-headline-sm text-headline-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-lg">timer</span>
+<span class="font-semibold tracking-tight" id="call-timer">00:34:22</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">#TLT-98421</span>
+<div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-title-md text-title-md text-on-surface">David Kakhabadze</span>
+<span class="px-space-xs py-space-2xs rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">97% Role Fit</span>
+<span class="text-outline">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Senior AI &amp; ML Systems Architect</span>
+</div>
+</div>
+<!-- Right: Interviewer Controls & Safety CTAs -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-title-md">psychology</span>
+<span class="font-label-md text-label-md">Stealth Tips: <strong class="text-tertiary">ON</strong></span>
+</div>
+<!-- AV Quick Toggles -->
+<div class="flex items-center rounded-lg bg-surface-container p-0.5">
+<button class="p-space-xs rounded text-on-surface hover:bg-surface-container-lowest transition-all" id="btn-mic" title="Mute Microphone">
+<span class="material-symbols-outlined text-headline-sm">mic</span>
+</button>
+<button class="p-space-xs rounded text-on-surface hover:bg-surface-container-lowest transition-all" id="btn-cam" title="Toggle Camera">
+<span class="material-symbols-outlined text-headline-sm">videocam</span>
+</button>
+<button class="p-space-xs rounded text-on-surface hover:bg-surface-container-lowest transition-all" title="Audio Device Settings">
+<span class="material-symbols-outlined text-headline-sm">volume_up</span>
+</button>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all font-title-md text-title-md">
+<span class="material-symbols-outlined text-primary text-title-md">bookmark_add</span>
+<span>Tag in AI Notes</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-error hover:bg-error/90 text-on-error font-title-md text-title-md shadow-md transition-all" id="finish-btn">
+<span class="material-symbols-outlined text-title-md">call_end</span>
+<span>Finish &amp; Generate Report</span>
+</button>
+</div>
+</div>
+<!-- Primary Workspace: Split 12-Column Responsive Bento Layout -->
+<div class="w-full px-margin-desktop py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- LEFT ZONE: Dual Video HUD & Real-time Live STT (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg min-w-0">
+<!-- Video Presence Grid: Candidate Main + Interviewer Subtile -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Candidate Main Video Feed (8 Cols on Desktop) -->
+<div class="md:col-span-8 relative aspect-video rounded-xl overflow-hidden bg-inverse-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="High quality professional headshot of candidate David Kakhabadze in mid-conversation during an executive tech interview, crisp focus, soft natural daylight, minimalist modern architectural home office background, calm and authoritative facial expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCkFoh4amQZGa2kt183kxOkIkl2DZ0SFe0o-OeYVMD2hhUeQbE84ZsPvAPAL6yP6WbFzlkmSRV2F0Sa-EQq4Wwnh8QeGhihov0d6Yv2qCIg1XaoweguYneG9OsfPSfFN1kIsqIT7ryWeWxar_hnBB5e3d6_F5pM6r8vL8J76dqYgf7eZlc2SxEiMplUsR4LxdkrXvleaKSn-eWefUs_ttq_bVO3AhP5JyddYvzmZuBzC4YI0-zeLOi"/>
+<!-- Gradient Scrim for Overlays -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-inverse-surface/40 pointer-events-none"></div>
+<!-- Top HUD Badges -->
+<div class="absolute top-space-sm left-space-sm right-space-sm flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-space-xs px-space-xs py-space-2xs rounded bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold">David Kakhabadze (Candidate)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-label-sm">visibility</span> Eye-Contact: 94%
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-label-sm">sentiment_calm</span> Calm &amp; Confident
+              </span>
+</div>
+</div>
+<!-- Bottom Candidate Video HUD: Live Audio Waveform & Status -->
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-surface-container-lowest font-semibold">David Kakhabadze</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-body-sm" title="Identity Verified by TalentAI">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-container-high/90">vLLM &amp; High-Throughput Distributed Inference</span>
+</div>
+<!-- Real-time SVG Audio Waveform Indicator -->
+<div class="flex items-center gap-1 px-space-xs py-1 rounded bg-inverse-surface/70 backdrop-blur-md">
+<span class="w-1 h-3 bg-tertiary-fixed-dim rounded-full animate-bounce"></span>
+<span class="w-1 h-5 bg-tertiary-fixed-dim rounded-full animate-bounce [animation-delay:0.15s]"></span>
+<span class="w-1 h-2 bg-tertiary-fixed-dim rounded-full animate-bounce [animation-delay:0.3s]"></span>
+<span class="w-1 h-6 bg-tertiary-fixed-dim rounded-full animate-bounce [animation-delay:0.1s]"></span>
+<span class="w-1 h-4 bg-tertiary-fixed-dim rounded-full animate-bounce [animation-delay:0.25s]"></span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface ml-1 font-mono">48kHz</span>
+</div>
+</div>
+</div>
+<!-- Interviewer Video Feed + Copilot Status (4 Cols) -->
+<div class="md:col-span-4 flex flex-col gap-space-sm">
+<div class="relative aspect-video rounded-xl overflow-hidden bg-inverse-surface shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional tech lead interviewer Giorgi Meskhi listening attentively with dual monitors glow, headset on, clean tech workspace ambient lighting in deep indigo and slate tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDValmU_69zFycKCMl9dWtqysvxbjWE_QU3mktm6jQfuUnECLo1FMtkfyBJ3XMSCVoX2s7yqk5PKlsYQkL_gdYApgejb7JsUPx-7KJSJ4moWIM7haLv7W9jYO0AbprnsU78cvDHDoqx1KuwT3JIZZoKJZD-IWwF-NWt9_oCyWSOcZwGervjhAPooss5HI8rK2EpQsLLwukD5ZtHDLSj5P12LauvshUyp_MOmlpV0ewgKlDs6yRsHP9z"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-space-xs left-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+                Interviewer · Lead
+              </span>
+</div>
+<div class="absolute bottom-space-xs left-space-xs right-space-xs flex items-center justify-between text-inverse-on-surface">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold leading-none">Giorgi Meskhi</span>
+<span class="font-label-sm text-label-sm text-surface-container-high/70">Staff Systems Eng.</span>
+</div>
+<span class="material-symbols-outlined text-body-md text-tertiary-fixed-dim">mic</span>
+</div>
+</div>
+<!-- Micro Telemetry Card: Sub-stream Stats -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Copilot Telemetry</span>
+<span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">v4.2 Active</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs text-left pt-1">
+<div class="p-space-xs rounded bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Glass Latency</span>
+<span class="font-title-md text-title-md font-semibold text-primary">14ms</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Sync Drift</span>
+<span class="font-title-md text-title-md font-semibold text-tertiary">0.02ms</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Streaming Transcription Card (Whisper STT & Real-Time RAG) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm flex flex-col overflow-hidden">
+<!-- Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">subtitles</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Live Continuous Transcription</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Whisper Ultra-Low Latency STT · Neural Semantic Annotation</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="flex h-2 w-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Stream: 120 tokens/sec</span>
+</div>
+</div>
+<!-- Transcript Feed Scrollable Area -->
+<div class="p-space-lg flex flex-col gap-space-md max-h-[380px] overflow-y-auto">
+<!-- Turn 1: Interviewer -->
+<div class="flex gap-space-sm">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-primary font-semibold">
+              GM
+            </div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Giorgi Meskhi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">10:32:04 AM</span>
+</div>
+<div class="p-space-md rounded-xl rounded-tl-none bg-surface-container-low text-on-surface font-body-md text-body-md leading-relaxed">
+                Could you walk us through how you resolve KV-Cache fragmentation under high concurrent load in vLLM deployments?
+              </div>
+</div>
+</div>
+<!-- Turn 2: Candidate with Real-time AI Annotations -->
+<div class="flex gap-space-sm">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-title-md text-title-md font-semibold shadow-sm">
+              DK
+            </div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-semibold text-on-surface">David Kakhabadze</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">10:32:48 AM</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed/40 text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Candidate Answer</span>
+</div>
+<div class="p-space-md rounded-xl rounded-tl-none bg-surface-container text-on-surface font-body-md text-body-md leading-relaxed shadow-sm">
+                We implemented the <mark class="bg-tertiary-fixed text-on-tertiary-fixed font-semibold px-1 rounded">PagedAttention algorithm</mark>, which allocates physical memory non-contiguously like virtual memory in standard OS pages. This cuts internal memory fragmentation to under 4% and scales multi-tenant token generation throughput by 3.8x without compromising KV integrity.
+              </div>
+<!-- Real-time Extracted RAG Verification Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest shadow-sm text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check_circle</span> PagedAttention: Verified Concept
+                </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest shadow-sm text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">speed</span> Latency Impact: 22ms
+                </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest shadow-sm text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">memory</span> VRAM Efficiency: +85%
+                </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest shadow-sm text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">description</span> Resume Match: 100%
+                </span>
+</div>
+</div>
+</div>
+<!-- Active Live Typing Stream Indicator -->
+<div class="flex gap-space-sm items-start opacity-90">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-title-md text-title-md text-on-secondary-fixed font-semibold">
+              DK
+            </div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-semibold text-on-surface">David is speaking...</span>
+<span class="flex h-1.5 w-1.5 rounded-full bg-tertiary animate-ping"></span>
+</div>
+<div class="p-space-md rounded-xl rounded-tl-none bg-surface-container-low text-on-surface font-body-md text-body-md italic border-l-2 border-primary">
+                “...in addition, we wrote custom Triton kernels to streamline quantized int8 tensor operations and minimize cross-socket PCIe bus bandwidth constraints...”
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT ZONE: Real-time Copilot Intelligence & Smart Prompts (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg min-w-0">
+<!-- AI Real-Time Dynamic Prompts & Suggestions -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- AI Glowing Accent Element -->
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-gradient-to-br from-primary/15 via-secondary/15 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="p-space-xs rounded bg-primary-container text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-headline-sm">neurology</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">AI Real-Time Smart Prompts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Generated dynamically based on current technical depth</span>
+</div>
+</div>
+<span class="px-space-xs py-space-2xs rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">High Relevance</span>
+</div>
+<!-- Recommended Question Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs text-primary">
+<span class="material-symbols-outlined text-title-md">electric_bolt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Recommended Follow-Up</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Priority 1</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold leading-snug">
+            “Ask: What happens when GPU VRAM OOMs? How do you prevent thread lockups and handle dynamic token eviction policies?”
+          </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Evaluates fault tolerance &amp; real-world edge recovery</span>
+<button class="px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary/90 text-on-primary font-title-md text-title-md shadow-sm transition-all flex items-center gap-1" id="ask-btn">
+<span class="material-symbols-outlined text-body-lg">done</span>
+<span>Question Asked</span>
+</button>
+</div>
+</div>
+<!-- Fact-Check & Technical Validation Snippet -->
+<div class="p-space-md rounded-xl bg-tertiary/5 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-headline-sm flex-shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Fact-Check: 100% Accurate</span>
+<span class="px-space-2xs py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">vLLM Benchmarks</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              PagedAttention indeed reduces memory waste to under 4% based on published vLLM arXiv data. Candidate metrics match enterprise deployments.
+            </p>
+</div>
+</div>
+<!-- Deep Dive Recommendation Option -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">insights</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Deep Dive: Multi-Tenant SLA guarantees &amp; real-time cluster queues</span>
+</div>
+<button class="p-space-2xs rounded hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-title-md">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Live Speech Dynamics & Talk Ratios (Interactive SVG Visualization) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">equalizer</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Speech Dynamics &amp; Conversational Balance</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-mono">Live Sync</span>
+</div>
+<!-- Talk-to-Listen Ratio Visualizer -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-secondary font-semibold">Candidate: 68% (Target 65-75%)</span>
+<span class="text-on-surface-variant font-semibold">Interviewer: 32%</span>
+</div>
+<!-- Dual-Tone Metric Progress Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-secondary-container transition-all duration-500" style="width: 68%;"></div>
+<div class="h-full bg-surface-tint opacity-50 transition-all duration-500" style="width: 32%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Ideal Balance: Candidate-led technical deep-dive</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check</span> Optimal Pace
+            </span>
+</div>
+</div>
+<!-- 3-Column Speech Metadata Cards -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Speech Velocity</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">138</span>
+<span class="font-label-sm text-label-sm text-tertiary">wpm · Stable</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pause Frequency</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">1.8s</span>
+<span class="font-label-sm text-label-sm text-primary">Reflective</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jargon Clarity</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">98%</span>
+<span class="font-label-sm text-label-sm text-secondary">High Precision</span>
+</div>
+</div>
+</div>
+<!-- Timeline & Progress Tracker -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Interview Timeline &amp; Stages</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Total: 55 min</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Step 1 Done -->
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-tertiary text-title-md">task_alt</span>
+<div class="flex flex-col flex-1">
+<span class="font-title-md text-title-md font-semibold text-on-surface">1. Intro &amp; Architectural Experience (5 min)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Completed · Candidate overview validated</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-tertiary/10 text-tertiary font-semibold">Passed</span>
+</div>
+<!-- Step 2 In Progress -->
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container shadow-sm">
+<span class="relative flex h-5 w-5 items-center justify-center text-primary">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-30"></span>
+<span class="material-symbols-outlined text-title-md text-primary">play_circle</span>
+</span>
+<div class="flex flex-col flex-1">
+<span class="font-title-md text-title-md font-bold text-primary">2. Architecture RAG &amp; LLM (25 min)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">In Progress · 4 min remaining</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-primary text-on-primary font-semibold">Active</span>
+</div>
+<!-- Step 3 Up Next -->
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-outline text-title-md">schedule</span>
+<div class="flex flex-col flex-1">
+<span class="font-title-md text-title-md font-semibold text-on-surface-variant">3. Live Coding &amp; System Logic (15 min)</span>
+<span class="font-body-sm text-body-sm text-outline">Up Next · Triton Kernel or CUDA profiling</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Queued</span>
+</div>
+<!-- Step 4 Queued -->
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-outline text-title-md">schedule</span>
+<div class="flex flex-col flex-1">
+<span class="font-title-md text-title-md font-semibold text-on-surface-variant">4. Candidate Q&amp;A &amp; Wrap-up (10 min)</span>
+<span class="font-body-sm text-body-sm text-outline">Queued · Offer expectations &amp; squad fit</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Queued</span>
+</div>
+</div>
+</div>
+<!-- Quick AI Candidate Strengths & Recruiter Scratchpad -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- AI Real-Time Competency Strengths -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Live Competency Ratings</span>
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface">Distributed Systems</span>
+<span class="text-primary font-bold">99%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 99%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md pt-1">
+<span class="text-on-surface">Vector DBs &amp; RAG</span>
+<span class="text-tertiary font-bold">96%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 96%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md pt-1">
+<span class="text-on-surface">Problem Clarity</span>
+<span class="text-secondary font-bold">94%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+</div>
+<!-- Recruiter Scratchpad / Quick AI Notes -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Interviewer Scratchpad</span>
+<span class="material-symbols-outlined text-outline text-title-md">edit_note</span>
+</div>
+<textarea class="w-full p-space-xs text-body-sm font-body-sm text-on-surface bg-surface-container-low rounded-lg focus:outline-none resize-none" id="recruiter-notes" placeholder="David demonstrated exceptional intuition on memory page swapping..." rows="3"></textarea>
+<div class="flex justify-end pt-1">
+<button class="px-space-sm py-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-all" id="save-note-btn">
+              Append to AI Summary
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Encrypted Audit Bar & Compliance Banner -->
+<div class="w-full px-margin-desktop py-space-xs bg-surface-container-low text-on-surface-variant flex flex-wrap items-center justify-between gap-space-xs shadow-inner">
+<div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-label-md">lock</span>
+<span>TalentAI Copilot Stream v4.2</span>
+</span>
+<span>·</span>
+<span>WebRTC E2E Encrypted</span>
+<span>·</span>
+<span>Whisper Latency: <strong class="text-on-surface font-mono">84ms</strong></span>
+<span>·</span>
+<span>Frame Drop: <strong class="text-on-surface font-mono">0.0%</strong></span>
+<span>·</span>
+<span>Monitored by: <strong>Nino Beridze</strong> (HR Director)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">shield</span> GDPR &amp; EU AI Act Compliant
+      </span>
+<span class="font-label-sm text-label-sm text-outline font-mono">HASH: 8f9b...a12c</span>
+</div>
+</div>
+<!-- Dynamic Script for Micro-Interactions -->
+<script>
+    // Live call duration timer simulation
+    let seconds = 34 * 60 + 22;
+    const timerElem = document.getElementById('call-timer');
+    if (timerElem) {
+      setInterval(() => {
+        seconds++;
+        const h = String(Math.floor(seconds / 3600)).padStart(2, '0');
+        const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+        const s = String(seconds % 60).padStart(2, '0');
+        timerElem.textContent = `${h}:${m}:${s}`;
+      }, 1000);
+    }
+
+    // Toggle Mic visual state
+    const micBtn = document.getElementById('btn-mic');
+    if (micBtn) {
+      micBtn.addEventListener('click', () => {
+        const icon = micBtn.querySelector('.material-symbols-outlined');
+        if (icon.textContent === 'mic') {
+          icon.textContent = 'mic_off';
+          micBtn.classList.add('text-error');
+        } else {
+          icon.textContent = 'mic';
+          micBtn.classList.remove('text-error');
+        }
+      });
+    }
+
+    // Toggle Cam visual state
+    const camBtn = document.getElementById('btn-cam');
+    if (camBtn) {
+      camBtn.addEventListener('click', () => {
+        const icon = camBtn.querySelector('.material-symbols-outlined');
+        if (icon.textContent === 'videocam') {
+          icon.textContent = 'videocam_off';
+          camBtn.classList.add('text-error');
+        } else {
+          icon.textContent = 'videocam';
+          camBtn.classList.remove('text-error');
+        }
+      });
+    }
+
+    // "Question Asked" feedback interaction
+    const askBtn = document.getElementById('ask-btn');
+    if (askBtn) {
+      askBtn.addEventListener('click', () => {
+        askBtn.textContent = 'Marked as Asked ✓';
+        askBtn.classList.remove('bg-primary');
+        askBtn.classList.add('bg-tertiary', 'text-on-tertiary');
+        setTimeout(() => {
+          askBtn.innerHTML = '<span class="material-symbols-outlined text-body-lg">done</span><span>Question Asked</span>';
+          askBtn.classList.add('bg-primary');
+          askBtn.classList.remove('bg-tertiary');
+        }, 3000);
+      });
+    }
+
+    // Recruiter Note Quick Save Feedback
+    const noteBtn = document.getElementById('save-note-btn');
+    const noteArea = document.getElementById('recruiter-notes');
+    if (noteBtn && noteArea) {
+      noteBtn.addEventListener('click', () => {
+        if (noteArea.value.trim().length > 0) {
+          const originalText = noteBtn.textContent;
+          noteBtn.textContent = 'Synced to Dossier!';
+          noteBtn.classList.add('text-tertiary');
+          setTimeout(() => {
+            noteBtn.textContent = originalText;
+            noteBtn.classList.remove('text-tertiary');
+          }, 2000);
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-space-2xl"><div class="w-full px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Talent<span class="text-tertiary-container">AI</span></span><span class="font-body-sm text-body-sm text-on-surface-variant pl-space-sm">© 2025 TalentAI Systems Inc. Autonomous Recruitment Intelligence.</span></div><div class="flex items-center gap-space-lg text-on-surface-variant"><a class="font-body-sm text-body-sm hover:text-primary transition-colors" href="#">Privacy &amp; Compliance</a><a class="font-body-sm text-body-sm hover:text-primary transition-colors" href="#">Algorithmic Transparency</a><a class="font-body-sm text-body-sm hover:text-primary transition-colors" href="#">API &amp; Integrations</a><a class="font-body-sm text-body-sm hover:text-primary transition-colors" href="#">System Status</a></div></div></footer></body></html>

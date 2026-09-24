@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html lang="ka"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#eaedff",
+          "on-secondary": "#ffffff",
+          "secondary": "#6b38d4",
+          "primary-container": "#4f46e5",
+          "on-primary-fixed": "#0f0069",
+          "surface": "#faf8ff",
+          "surface-bright": "#faf8ff",
+          "outline-variant": "#c7c4d8",
+          "tertiary-container": "#006a7c",
+          "on-secondary-container": "#fffbff",
+          "surface-dim": "#d2d9f4",
+          "on-background": "#131b2e",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "inverse-on-surface": "#eef0ff",
+          "surface-container-low": "#f2f3ff",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#c3c0ff",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed": "#23005c",
+          "surface-variant": "#dae2fd",
+          "inverse-surface": "#283044",
+          "secondary-fixed-dim": "#d0bcff",
+          "secondary-fixed": "#e9ddff",
+          "on-surface-variant": "#464555",
+          "outline": "#777587",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-container": "#dad7ff",
+          "on-secondary-fixed-variant": "#5516be",
+          "background": "#faf8ff",
+          "inverse-primary": "#c3c0ff",
+          "surface-tint": "#4d44e3",
+          "on-surface": "#131b2e",
+          "primary": "#3525cd",
+          "on-tertiary-fixed": "#001f26",
+          "on-tertiary-container": "#93e8ff",
+          "secondary-container": "#8455ef",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "error-container": "#ffdad6",
+          "error": "#ba1a1a",
+          "surface-container-high": "#e2e7ff",
+          "on-primary-fixed-variant": "#3323cc",
+          "tertiary-fixed": "#acedff",
+          "tertiary": "#00505f",
+          "surface-container-lowest": "#ffffff",
+          "primary-fixed": "#e2dfff",
+          "on-primary": "#ffffff",
+          "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-tablet": "2rem",
+          "margin-desktop": "2.5rem",
+          "gutter-desktop": "1.5rem",
+          "margin-mobile": "1rem",
+          "space-sm": "0.75rem",
+          "space-2xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-md": "1rem",
+          "space-2xl": "3rem",
+          "space-xs": "0.5rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "metric-score": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "metric-score": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "display-hero-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[1px_0_8px_rgba(0,0,0,0.03)]"><div class="px-space-lg mb-space-xl flex items-center gap-space-sm"><img alt="TalentAI Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI2HhV45lPlW2yhzwrPZKrlRJWm9CF5UaOT5E6mlXItxhHqXSEIaGXQ8unlwhFbPanrcnLeuGqGm0hD2v-6FBZsu8Bo7Oz2bF5LLtCtSTSUIZ2fNh7poRTkO9TpFJkBX5nd8hVxu1APDtdShrDHRAjNt80BuJGlQ0gmZd8k6h1M5W6DZ1F3ugpFPdrvEPwIMaPbvqwsJn2IxC4P5eMJb9SeBno8dlr744Tkvp-mhjcz8lCsj6AZH1P"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TalentAI</span></div><div class="px-space-md mb-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-xs">ნავიგაცია</span></div><nav class="flex-1 px-space-sm space-y-1" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="job-search" href="#"><span class="font-label-md text-label-md">ვაკანსიების ძიება</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="candidate-hub" href="#"><span class="font-label-md text-label-md">კანდიდატის პორტალი</span></a><a aria-current="page" class="flex items-center px-space-md py-space-xs rounded-xl transition-all bg-surface-container-high text-primary font-semibold" data-path="candidate-profile-dossier" href="#"><span class="font-label-md text-label-md">კანდიდატის პროფილი / AI დოსიე</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="employer-hub" href="#"><span class="font-label-md text-label-md">დამსაქმებლის კაბინეტი</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="admin-panel" href="#"><span class="font-label-md text-label-md">ადმინ პანელი</span></a></nav><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-high/60 flex flex-col gap-space-2xs"><span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">auto_awesome</span>AI Intelligence</span><span class="font-body-sm text-body-sm text-on-surface-variant">ალგორითმი სრულად სინქრონიზებულია</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-high rounded-full shadow-[0_0_0_1px_rgba(79,70,229,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-primary tracking-wide">AI მატჩი: 94% აქტიური</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex h-2 w-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_2px_rgba(79,70,229,0.2)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa8oT_NF20k17qLE1b2ZcHs0pFO6CWJx5g7s52uiIjy53YImoEB4Gv7v1OGFUulA7OBv-TAyui3MoHsjPM4HFBmtPeURDmoNFEhTc5_8Nur5Dxe3Rqa7-DVO4uFaxDRbwck4stLUPvRZUW9bmzueon1pERna2Ils6SUOKdFTEcmE1cSle3WR2JDP0a0mmM1ah_x9Jb4nccBmj7M6jsEAbwB1PCU4dVyo_iq6nR-eVBhUdr-FQKpYJe"/><span class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">ნინო ბერიძე</span><span class="font-label-sm text-label-sm text-outline mt-0.5">HR Director</span></div><button class="p-space-2xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="როლის შეცვლა" type="button"><span class="material-symbols-outlined text-[18px]">swap_vert</span></button></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Breadcrumb & Status Alert Ribbon -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-outline">
+<a class="hover:text-primary transition-colors" href="#">კანდიდატის პროფილი</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">ინტერვიუები</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">ტექნიკური გასაუბრება #1 — AI შეფასება</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded-full self-start md:self-auto">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">აუდიტორული ჩანაწერი #TLT-98421 • სინქრონიზებულია</span>
+</div>
+</div>
+<!-- Primary Candidate & Evaluation Hero Panel -->
+<section class="relative bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm overflow-hidden">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none"></div>
+<div class="absolute right-48 -bottom-20 w-72 h-72 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl">
+<!-- Left: Candidate Details & Meta -->
+<div class="flex flex-col sm:flex-row items-start gap-space-lg max-w-2xl">
+<div class="relative flex-shrink-0">
+<img class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover shadow-md" data-alt="Professional modern headshot of Davit Kakhabadze, a senior AI machine learning engineer in a contemporary tech office, wearing a dark crewneck, soft studio rim lighting, neutral indigo-tinted background, ultra-sharp detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjnqjb33lJHJnlmNF8hvwuWnicSC5ckdrTqOWj5DIS8bKLwpQ1zF6AnyIsiLT2yKweKV5Q13fRGclCwRyRLZfzuhEO0DdenJbaQr4-m8qA_2ZHIM9J9jxJ2YEpX3elZsApIfU3z8KWjRs8uRk0UN_BE7Lsh5oxSmmKTtu9WJbP3ANhAPg4ASLjST0p3FlUTxBnANgjT_jnlcMl7UCEi3g8K2W728ZRoHZhbLJAdaT_aFjbZ3GsIkNX"/>
+<span class="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-on-primary shadow-sm" title="AI დამოწმებული">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">დავით კახაბაძე</h1>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high font-label-sm text-label-sm text-primary font-bold">Tech Lead Tier</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface-variant">Senior AI &amp; Machine Learning Engineer</p>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-space-md text-outline font-body-sm text-body-sm mt-space-2xs">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">account_circle</span>
+              ინტერვიუერი: <strong class="text-on-surface ml-0.5">გიორგი მესხი</strong> (Tech Lead, TechNova)
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              დღეს, 16:30 - 17:15 (45 წთ)
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">videocam</span>
+              Google Meet / TalentAI Room
+            </span>
+</div>
+</div>
+</div>
+<!-- Right: AI Metric Score & Quick Actions -->
+<div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start sm:items-center gap-space-lg w-full lg:w-auto">
+<!-- Circular Score Vector Badge -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-sm sm:px-space-md rounded-xl">
+<div class="relative flex items-center justify-center w-16 h-16">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-metric-score text-metric-score text-primary font-bold">94</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">AI ვერდიქტი</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">Strong Hire</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold">მზადყოფნა: 94/100</span>
+</div>
+</div>
+<!-- Call to actions -->
+<div class="flex flex-wrap sm:flex-col gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs px-space-md py-space-xs bg-primary-container text-on-primary rounded-xl font-label-md text-label-md font-semibold hover:opacity-95 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>შემდეგი ეტაპი (Offer)</span>
+</button>
+<div class="flex gap-space-xs">
+<button class="flex items-center justify-center gap-1 px-space-sm py-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>PDF ექსპორტი</span>
+</button>
+<button class="flex items-center justify-center gap-1 px-space-sm py-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-md text-label-md transition-colors" title="გუნდთან გაზიარება" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Summary Card (AI Generative Aura) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm relative overflow-hidden">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-space-md gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="flex h-7 w-7 items-center justify-center rounded-lg bg-secondary-fixed text-secondary">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">AI შეჯამება და ძირითადი ვერდიქტი</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Gemini 1.5 Pro Neural Engine</span>
+<span class="font-body-sm text-body-sm text-outline">დამუშავდა: 2.4 წამში</span>
+</div>
+</div>
+<!-- Summary Text Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-lg">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+        კანდიდატმა გამოავლინა ღრმა სისტემური ცოდნა <strong>RAG არქიტექტურაში</strong>, <strong>vLLM მეხსიერების ოპტიმიზაციასა</strong> და დიდი ენობრივი მოდელების პროდაქშენ გარემოში გაშვების სპეციფიკაში. პასუხები იყო მკაფიოდ სტრუქტურირებული, არგუმენტირებული და პრაქტიკულ ევრისტიკებზე დამყარებული. გამოირჩევა როგორც არქიტექტურული ხედვით, ასევე კოდის დონის ნიუანსების უზადო ფლობით.
+      </p>
+</div>
+<!-- Strengths vs Areas of Focus Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- 2 Strengths Panels -->
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>ძირითადი გამორჩეული სიძლიერე (Top Strengths)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface font-semibold">სისტემური მასშტაბირება</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Latency-სა და Throughput-ის ზუსტი კალკულაცია და ოპტიმიზაცია.</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface font-semibold">პრაგმატული მიდგომა</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Edge-case სცენარების და KV Cache-ის ეფექტური გადანაწილება.</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface font-semibold">გუნდური კომუნიკაცია</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">რთული ტექნიკური იდეების მარტივი და ლაკონიური დელივერი.</span>
+</div>
+</div>
+</div>
+<!-- Growth Area Panel -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-outline font-label-md text-label-md font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+<span>განვითარების ზონა</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1 flex-1">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Cloud ბიუჯეტირება</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AWS/GCP GPU ინსტანსების მრავალმილიონიანი ბიუჯეტის FinOps მართვის ნაკლები შეხება წარსულ როლებში.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-Dimension Metric Breakdown Bento -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">კომპეტენციების 4-განზომილებიანი AI ანალიტიკა</h2>
+<span class="font-label-sm text-label-sm text-outline">ბენჩმარკი: TechNova ML Team L6 ინჟინრები</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Dim 1: Tech Depth -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:-translate-y-0.5 transition-transform">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-primary-fixed text-primary">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</span>
+<span class="font-metric-score text-metric-score text-primary">96%</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mt-1">ტექნიკური სიღრმე და არქიტექტურა</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">შესანიშნავი ცოდნა Llama-3 Fine-tuning-სა და LoRA ადაპტერების პარალელიზაციაში.</p>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 96%"></div>
+</div>
+</div>
+<!-- Dim 2: Problem Solving -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:-translate-y-0.5 transition-transform">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</span>
+<span class="font-metric-score text-metric-score text-primary">93%</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mt-1">პრობლემის გადაჭრა &amp; ლოგიკა</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">მყისიერი ადაპტაცია უჩვეულო Edge-case სცენარებზე და Kubernetes რეპლიკაციაზე.</p>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 93%"></div>
+</div>
+</div>
+<!-- Dim 3: Communication & Soft Skills -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:-translate-y-0.5 transition-transform">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-tertiary-fixed text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+</span>
+<span class="font-metric-score text-metric-score text-tertiary font-bold">91%</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mt-1">კომუნიკაცია &amp; Soft Skills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">მკაფიო, ლაკონიური არგუმენტაცია, ტექნიკური დეტალების უპრობლემო ახსნა.</p>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 91%"></div>
+</div>
+</div>
+<!-- Dim 4: Culture Fit -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:-translate-y-0.5 transition-transform">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-secondary-fixed text-secondary">
+<span class="material-symbols-outlined text-[20px]">handshake</span>
+</span>
+<span class="font-metric-score text-metric-score text-secondary font-bold">95%</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mt-1">კულტურული თავსებადობა</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">სრულად ემთხვევა TechNova-ს ღია ინოვაციურ, ავტონომიურ სამუშაო კულტურას.</p>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Question-by-Question Deep Dive & Transcript Analysis -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">ინტერვიუს კითხვების AI ანალიზი &amp; ტრანსკრიპტი</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">თითოეული პასუხის სიღრმისეული შეფასება, საკვანძო ტერმინოლოგია და ლოგიკური წყობა</p>
+</div>
+<span class="font-label-sm text-label-sm text-outline self-start sm:self-auto bg-surface-container px-space-sm py-1 rounded-full">სულ: 3 ძირითადი საკითხი</span>
+</div>
+<!-- Question 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold">1</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">„როგორ ოპტიმიზაციას გაუკეთებდით vLLM-ის მეხსიერებას მაღალი დატვირთვის დროს?“</h3>
+<span class="font-body-sm text-body-sm text-outline">თემა: Large Scale Inference / LLMOps</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1 rounded-lg self-start">
+<span class="material-symbols-outlined text-[18px] text-primary">award_star</span>
+<span class="font-title-md text-title-md text-primary font-bold">9.8 / 10</span>
+</div>
+</div>
+<!-- Keywords Pill Row -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline">გამოყენებული კონცეფციები:</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">PagedAttention</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Continuous Batching</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">KV Cache Sharding</span>
+</div>
+<!-- AI Insight Banner -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">AI შეფასების დასკვნა</span>
+<p class="font-body-sm text-body-sm text-on-surface">კანდიდატმა ზუსტად განმარტა მეხსიერების ფრაგმენტაციის პრობლემა და წარმოადგინა vLLM PagedAttention-ის პრაქტიკული გამოცდილება. პასუხი 100% ზუსტია და სრულ შესაბამისობაშია რეალურ საწარმოო გამოწვევებთან.</p>
+</div>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold">2</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">„RAG არქიტექტურაში ჰიბრიდული ძიება (Dense + Sparse Vector DBs) და რერანკინგი.“</h3>
+<span class="font-body-sm text-body-sm text-outline">თემა: Retrieval Augmented Generation / Semantic Search</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1 rounded-lg self-start">
+<span class="material-symbols-outlined text-[18px] text-primary">award_star</span>
+<span class="font-title-md text-title-md text-primary font-bold">9.5 / 10</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline">გამოყენებული კონცეფციები:</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Qdrant Vector DB</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Cohere Rerank v3</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">BM25 Hybrid Weighting</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">AI შეფასების დასკვნა</span>
+<p class="font-body-sm text-body-sm text-on-surface">სწორად დაასაბუთა Qdrant-ის ინდექსაციის უპირატესობა და Cohere Rerank-ით ტოპ-N კონტექსტის გაფილტვრა Hallucination-ების 40%-ით შესამცირებლად.</p>
+</div>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold">3</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">„როგორ მოიქცეოდით, როცა მოდელის ინფერენსის დროს GPU worker-ები ითიშება?“</h3>
+<span class="font-body-sm text-body-sm text-outline">თემა: Reliability Engineering &amp; High Availability</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1 rounded-lg self-start">
+<span class="material-symbols-outlined text-[18px] text-primary">award_star</span>
+<span class="font-title-md text-title-md text-primary font-bold">9.0 / 10</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline">გამოყენებული კონცეფციები:</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Kubernetes HPA / KEDA</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Graceful Degrade</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Quantized Fallback</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">AI შეფასების დასკვნა</span>
+<p class="font-body-sm text-body-sm text-on-surface">დეტალურად აღწერა Failover სტრატეგია, თუმცა ბიუჯეტური თვალსაზრისით მრავალრეგიონიანი რეზერვის ხარჯი ნაკლებად იყო გათვალისწინებული.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Speech, Behavioral & Ratio Analytics Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Talk/Listen Ratio Visualizer -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">საუბრის ბალანსი (Talk/Listen)</h3>
+<span class="material-symbols-outlined text-[18px] text-outline">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">ინტერვიუს განმავლობაში დროის პროპორციული გადანაწილება</p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm font-semibold">
+<span class="text-primary flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container"></span>კანდიდატი: 68%</span>
+<span class="text-outline flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>ინტერვიუერი: 32%</span>
+</div>
+<div class="w-full flex h-3 rounded-full overflow-hidden bg-surface-container">
+<div class="bg-primary-container h-full" style="width: 68%"></div>
+<div class="bg-surface-container-highest h-full" style="width: 32%"></div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-outline">
+        იდეალური დიაპაზონი (65-75% კანდიდატის სასარგებლოდ)
+      </div>
+</div>
+<!-- Acoustic & Speech Dynamics -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">ტემპი და სიცხადე</h3>
+<span class="material-symbols-outlined text-[18px] text-tertiary">graphic_eq</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">მეტყველების სიჩქარე, პაუზები და არტიკულაცია</p>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<span class="font-metric-score text-metric-score text-on-surface font-bold">135</span>
+<span class="font-body-sm text-body-sm text-outline ml-1">სიტყვა / წთ</span>
+</div>
+<span class="px-space-xs py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">იდეალური ტემპი</span>
+</div>
+<!-- Sparkline waveform visual -->
+<div class="flex items-center gap-1 h-8">
+<span class="flex-1 bg-primary/20 rounded-full h-3"></span>
+<span class="flex-1 bg-primary/40 rounded-full h-5"></span>
+<span class="flex-1 bg-primary/80 rounded-full h-8"></span>
+<span class="flex-1 bg-primary-container rounded-full h-6"></span>
+<span class="flex-1 bg-primary/50 rounded-full h-4"></span>
+<span class="flex-1 bg-primary/70 rounded-full h-7"></span>
+<span class="flex-1 bg-primary-container rounded-full h-8"></span>
+<span class="flex-1 bg-primary/60 rounded-full h-5"></span>
+<span class="flex-1 bg-primary/30 rounded-full h-3"></span>
+</div>
+</div>
+<!-- Confidence & Verbal Precision -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">თავდაჯერებულობა &amp; სიზუსტე</h3>
+<span class="material-symbols-outlined text-[18px] text-secondary">sentiment_very_satisfied</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">ემოციური სტაბილურობა და პარაზიტული სიტყვების ანალიზი</p>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col">
+<span class="font-metric-score text-metric-score text-secondary font-bold">94%</span>
+<span class="font-label-sm text-label-sm text-outline">თავდაჯერებულობის ინდექსი</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col">
+<span class="font-metric-score text-metric-score text-primary font-bold">&lt; 2%</span>
+<span class="font-label-sm text-label-sm text-outline">პარაზიტული სიტყვები</span>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-outline">
+        მინიმალური ყოყმანი, მაღალი ფოკუსი
+      </div>
+</div>
+</section>
+<!-- Dual Perspective: Interviewer Human Notes vs Recommendation Checklist -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-md mb-space-lg">
+<!-- Human Interviewer Personal Evaluation (2 cols) -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">rate_review</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ინტერვიუერის პირადი შეფასება (Human-in-the-Loop)</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">სრული თანხვედრა AI-თან</span>
+</div>
+<div class="flex items-start gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<img class="w-12 h-12 rounded-xl object-cover flex-shrink-0" data-alt="Corporate headshot portrait of Giorgi Meskhi, Tech Lead with glasses and modern business casual attire, warm lighting, soft background depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmtrAEWCC8AszDx1ICAPzzsYz5O3YfuKzMaymVzdukKYv3j6fgYo0wXjw4jDHmqHh3ENw8P_9w2NGly5crWuMb3YAMbU0zwlECfK4sWEcLo7-ALjlXNmUDHgQQub8Dz4AZe5M5F21E5kGRbG9HjY2t6tXaL3nIkRzJLW708B3oWXNyxstSNslGZwhA7_y80xfzVHNTcqmrJemopvie12E06YzEIKDfcvSa4hBcAhZwCZmnyC9y0HWl"/>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-bold">გიორგი მესხი</span>
+<span class="font-label-sm text-label-sm text-outline">• Tech Lead &amp; Hiring Manager</span>
+</div>
+<blockquote class="font-body-md text-body-md text-on-surface italic">
+              „ძალიან კმაყოფილი ვარ კანდიდატის კომპეტენციით. დავითი ზუსტად იმ დონის არქიტექტორია, რომელიც ჩვენს LLM პროექტს სჭირდება წარმოების ეტაპზე გადასაყვანად. განსაკუთრებით მომეწონა მისი პასუხი vLLM KV Cache-ის დაცლის ალგორითმებზე. ჩემი უპირობო რეკომენდაციაა: <strong>Strong Hire</strong>.“
+            </blockquote>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-space-xs">
+<span>დამოწმებულია გიორგის მიერ (დღეს, 17:22)</span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+          ხელმოწერილია ორმხრივი დადასტურებით
+        </span>
+</div>
+</div>
+<!-- Next Recommended Steps Action Panel (1 col) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">checklist</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">შემდეგი ნაბიჯები</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">HR და ტექნიკური მენეჯმენტის სამოქმედო გეგმა</p>
+</div>
+<!-- Action Items with Checkboxes -->
+<div class="flex flex-col gap-space-sm" id="action-checklist">
+<label class="flex items-start gap-space-xs p-space-xs rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary-container focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">გუნდის საბოლოო გადაწყვეტილება</span>
+<span class="font-body-sm text-body-sm text-outline">დამტკიცებულია 3/3 ხმით</span>
+</div>
+</label>
+<label class="flex items-start gap-space-xs p-space-xs rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="mt-1 h-4 w-4 rounded text-primary-container focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ოფერ პაკეტის გენერაცია</span>
+<span class="font-body-sm text-body-sm text-outline">AI ბაზრის ინსაითებზე დაყრდნობით</span>
+</div>
+</label>
+<label class="flex items-start gap-space-xs p-space-xs rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="mt-1 h-4 w-4 rounded text-primary-container focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">პირდაპირი შეტყობინების გაგზავნა</span>
+<span class="font-body-sm text-body-sm text-outline">ნინო ბერიძის (HRD) მეშვეობით</span>
+</div>
+</label>
+</div>
+<button class="w-full py-space-xs bg-primary-container hover:opacity-90 text-on-primary rounded-xl font-label-md text-label-md font-semibold text-center transition-opacity shadow-sm" onclick="alert('ოფერის გენერატორი გააქტიურებულია')" type="button">
+        შეთავაზების პროექტის დაწყება
+      </button>
+</div>
+</section>
+</div></main></div></body></html>

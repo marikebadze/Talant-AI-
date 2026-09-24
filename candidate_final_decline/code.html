@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="ka"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-container": "#8455ef",
+          "on-tertiary-container": "#93e8ff",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#23005c",
+          "primary-fixed-dim": "#c3c0ff",
+          "on-primary": "#ffffff",
+          "secondary-fixed-dim": "#d0bcff",
+          "surface-tint": "#4d44e3",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "secondary": "#6b38d4",
+          "on-secondary-container": "#fffbff",
+          "surface": "#faf8ff",
+          "outline-variant": "#c7c4d8",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "surface-variant": "#dae2fd",
+          "surface-container": "#eaedff",
+          "background": "#faf8ff",
+          "on-surface": "#131b2e",
+          "on-primary-container": "#dad7ff",
+          "primary-fixed": "#e2dfff",
+          "surface-bright": "#faf8ff",
+          "inverse-primary": "#c3c0ff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-fixed": "#0f0069",
+          "primary": "#3525cd",
+          "primary-container": "#4f46e5",
+          "on-surface-variant": "#464555",
+          "on-tertiary": "#ffffff",
+          "surface-container-highest": "#dae2fd",
+          "outline": "#777587",
+          "on-background": "#131b2e",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#00505f",
+          "inverse-on-surface": "#eef0ff",
+          "on-secondary-fixed-variant": "#5516be",
+          "error": "#ba1a1a",
+          "on-primary-fixed-variant": "#3323cc",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#001f26",
+          "secondary-fixed": "#e9ddff",
+          "surface-dim": "#d2d9f4",
+          "tertiary-fixed": "#acedff",
+          "tertiary-container": "#006a7c",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#283044",
+          "on-secondary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-sm": "0.75rem",
+          "margin-desktop": "2.5rem",
+          "margin-tablet": "2rem",
+          "space-2xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "gutter-desktop": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-2xl": "3rem",
+          "space-md": "1rem",
+          "space-xl": "2rem",
+          "margin-mobile": "1rem"
+        },
+        "fontFamily": {
+          "metric-score": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "metric-score": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[1px_0_8px_rgba(0,0,0,0.03)]"><div class="px-space-lg mb-space-xl flex items-center gap-space-sm"><div class="h-9 w-9 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-sm shadow-md">TN</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">TechNova</span><span class="font-label-sm text-label-sm text-primary tracking-wide uppercase">Global Employer</span></div></div><div class="px-space-md mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-xs">რეკრუტინგი &amp; მენეჯმენტი</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="declined-offers" href="#"><span class="font-label-md text-label-md">უარყოფილი ოფერები</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="offer-negotiation-recruiter" href="#"><span class="font-label-md text-label-md">ოფერის მოლაპარაკება HR</span></a><a class="flex items-center px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="offer-negotiation-candidate" href="#"><span class="font-label-md text-label-md">ოფერის Q&amp;A კანდიდატი</span></a><a aria-current="page" class="flex items-center px-space-md py-space-xs rounded-xl transition-all bg-surface-container-high text-primary font-semibold" data-path="offer-decline-confirmation" href="#"><span class="font-label-md text-label-md">ოფერის უარყოფის დადასტურება</span></a></nav><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-high/60 flex flex-col gap-space-2xs"><span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">insights</span>Offer Acceptance Rate</span><span class="font-metric-score text-headline-sm text-primary">87.4%</span><span class="font-body-sm text-body-sm text-on-surface-variant">+4.2% წინა კვარტალთან შედარებით</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-high rounded-full shadow-[0_0_0_1px_rgba(79,70,229,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-primary tracking-wide">AI Talent Match: 94% აქტიური</span></div><div class="hidden lg:flex items-center px-space-sm py-space-2xs bg-surface-container-low rounded-lg text-outline text-label-sm gap-space-xs"><span class="material-symbols-outlined text-[16px]">domain</span><span>TechNova Global HR HQ</span></div></div><div class="flex items-center gap-space-md"><button aria-label="შეტყობინებები" class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex h-2 w-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_2px_rgba(79,70,229,0.2)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa8oT_NF20k17qLE1b2ZcHs0pFO6CWJx5g7s52uiIjy53YImoEB4Gv7v1OGFUulA7OBv-TAyui3MoHsjPM4HFBmtPeURDmoNFEhTc5_8Nur5Dxe3Rqa7-DVO4uFaxDRbwck4stLUPvRZUW9bmzueon1pERna2Ils6SUOKdFTEcmE1cSle3WR2JDP0a0mmM1ah_x9Jb4nccBmj7M6jsEAbwB1PCU4dVyo_iq6nR-eVBhUdr-FQKpYJe"/><span class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">ნინო ბერიძე</span><span class="font-label-sm text-label-sm text-outline mt-0.5">VP of Global Talent</span></div><button class="p-space-2xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="პროფილის პარამეტრები" type="button"><span class="material-symbols-outlined text-[18px]">expand_more</span></button></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Status Indicator -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">dashboard</span>
+<span>ჩემი კაბინეტი</span>
+</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">შეთავაზებები</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">TechNova Global</span>
+<span class="text-outline-variant">/</span>
+<span class="text-error font-medium">საბოლოო უარის დაფიქსირება</span>
+</nav>
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined text-outline text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-outline">SSL 256-Bit Encrypted Candidate Portal</span>
+</div>
+</div>
+<!-- Hero-style Attention Callout (Non-duplicate Header, purposeful alert context) -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-error/10 via-surface-container to-surface-container-low p-space-lg mb-space-xl shadow-sm">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-error/10 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="h-12 w-12 rounded-xl bg-error flex items-center justify-center text-on-error shadow-md flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">cancel</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">შეთავაზებაზე საბოლოო უარის დადასტურება</span>
+<span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-semibold">Irrevocable Step</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-3xl">
+            თქვენ აფიქსირებთ საბოლოო უარს TechNova Global-ის განახლებულ კონტრ-შეთავაზებაზე (<span class="font-semibold text-on-surface">#TN-OFFER-8941-REV2</span>). ეს მოქმედება შეუქცევადია, აუქმებს მიმდინარე ოფერს და წყვეტს DocuSign ხელშეკრულების პროცესს.
+          </p>
+</div>
+</div>
+<!-- Key Mini Summary Pill -->
+<div class="flex-shrink-0 bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-sm flex flex-col gap-1 min-w-[210px]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">კანდიდატი</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">ნიკა კალანდაძე</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">ოფერი (L6)</span>
+<span class="font-label-md text-label-md font-bold text-primary">$168,000 / წელი</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">სტატუსი</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-error"></span>Decline Pending
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid: Two Columns (Form 8 cols vs Context Sidebar 4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Form Area (Col 1-8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Step 1: Reason Selector -->
+<section class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="h-6 w-6 rounded-full bg-surface-container-high text-primary font-headline-sm text-label-md flex items-center justify-center font-bold">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">საბოლოო უარის მთავარი ფაქტორი</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">სავალდებულო</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          გთხოვთ მიუთითოთ გადაწყვეტილების მთავარი მიზეზი. ეს ინფორმაცია მკაცრად კონფიდენციალურია და ემსახურება TechNova-ს შეთავაზებების ოპტიმიზაციას.
+        </p>
+<div class="space-y-space-xs mt-space-2xs">
+<!-- Option 1: Selected -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-high/40 hover:bg-surface-container-high transition-all cursor-pointer">
+<input checked="" class="mt-1 h-4 w-4 text-primary focus:ring-primary" name="decline_factor" type="radio" value="competitor"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">მიღებულია სხვა გლობალური კომპანიის ოფიციალური შეთავაზება</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accepted an alternative international offer with faster progression or tailored focus</span>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer">
+<input class="mt-1 h-4 w-4 text-primary focus:ring-primary" name="decline_factor" type="radio" value="alignment"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">შეთავაზებული როლი ან პასუხისმგებლობები არ შეესაბამება მიმდინარე კარიერულ მიზნებს</span>
+<span class="font-body-sm text-body-sm text-outline">ტექნიკური სტეკის ან მენეჯერული მოლოდინების დისბალანსი</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer">
+<input class="mt-1 h-4 w-4 text-primary focus:ring-primary" name="decline_factor" type="radio" value="stay_current"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">გადავწყვიტე მიმდინარე სამსახურში დარჩენა / შიდა დაწინაურება</span>
+<span class="font-body-sm text-body-sm text-outline">მიმდინარე დამსაქმებლის მიერ კონტრ-შეთავაზების წარმატებული დაკმაყოფილება</span>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer">
+<input class="mt-1 h-4 w-4 text-primary focus:ring-primary" name="decline_factor" type="radio" value="personal"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">პირადი ან ოჯახური გარემოებები</span>
+<span class="font-body-sm text-body-sm text-outline">დროებითი პაუზა კარიერულ ცვლილებებში, ლოკაციის ან რელოკაციის შეზღუდვები</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Step 2: Anonymous Market Analytics (Optional) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="h-6 w-6 rounded-full bg-surface-container-high text-primary font-headline-sm text-label-md flex items-center justify-center font-bold">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">კონკურენტული შეთავაზების ანონიმური დეტალები</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">სურვილისამებრ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          გვეხმარება გავაანალიზოთ TechNova-ს საბაზრო კონკურენტუნარიანობა AI Infrastructure სეგმენტში. მონაცემები ინახება სრულად ანონიმურად.
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xs">
+<!-- Company Type -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface font-medium">კომპანიის ტიპი / ეკოსისტემა</label>
+<div class="relative">
+<select class="w-full h-10 px-space-sm pr-8 bg-surface-container-lowest rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-low shadow-sm">
+<option selected="" value="us-ai-startup">US Series-B/C AI Startup</option>
+<option value="enterprise-tier1">Big Tech / Enterprise Hyperscaler</option>
+<option value="eu-fintech">European FinTech Scaleup</option>
+<option value="other">სხვა ტიპის ორგანიზაცია</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Role Level -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface font-medium">არჩეული როლის დონე</label>
+<div class="relative">
+<select class="w-full h-10 px-space-sm pr-8 bg-surface-container-lowest rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-low shadow-sm">
+<option selected="" value="principal">Principal / Founding AI Engineer</option>
+<option value="staff">Staff Infrastructure Architect</option>
+<option value="lead-director">Head of AI / Director of Engineering</option>
+<option value="individual">Equivalent Technical Specialist</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Decisive Factor (Full width) -->
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface font-medium">რა იყო ალტერნატიული ოფერის მთავარი უპირატესობა?</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-lowest rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-low shadow-sm" type="text" value="უფრო მაღალი Equity წილი და ადრეული სტადიის პროდუქტის არქიტექტურა (Greenfield LLM Stack)"/>
+</div>
+</div>
+</section>
+<!-- Step 3: Gratitude & Feedback note -->
+<section class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="h-6 w-6 rounded-full bg-surface-container-high text-primary font-headline-sm text-label-md flex items-center justify-center font-bold">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">საბოლოო მადლობა &amp; უკუკავშირი TechNova-ს გუნდს</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>AI რედაქტორი
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          ეს ტექსტი პირდაპირ გაეგზავნებათ თქვენს რეკრუტერს (ნინო ბერიძე) და ტექნიკურ ხელმძღვანელს (ლევან კახაძე). შეგიძლიათ შეცვალოთ ან დაამატოთ ნებისმიერი კომენტარი.
+        </p>
+<div class="relative">
+<textarea class="w-full p-space-md bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-colors shadow-inner leading-relaxed" rows="4">უდიდესი მადლობა TechNova Global-ის გუნდს, ნინო ბერიძეს და განსაკუთრებით ლევან კახაძეს პროფესიონალური და საინტერესო ტექნიკური დიალოგისთვის. მიუხედავად იმისა, რომ ამ ეტაპზე ავირჩიე სხვა გზა, მოხარული ვიქნები სამომავლო კონტაქტისთვის.</textarea>
+<div class="absolute right-3 bottom-3 flex items-center gap-space-xs">
+<button class="px-space-xs py-1 rounded bg-surface-container-high hover:bg-surface-container text-primary font-label-sm text-label-sm transition-colors" onclick="document.querySelector('textarea').value += ' საუკეთესო სურვილებით, ნიკა.'" type="button">
+              + ხელმოწერა
+            </button>
+</div>
+</div>
+</section>
+<!-- Step 4: Future Engagement Preferences -->
+<section class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="h-6 w-6 rounded-full bg-surface-container-high text-primary font-headline-sm text-label-md flex items-center justify-center font-bold">4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">სამომავლო თანამშრომლობის პარამეტრები</h2>
+</div>
+<div class="space-y-space-sm mt-space-2xs">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">პროფილის შენარჩუნება TechNova Global-ის VIP Talent Network-ში</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ჩვენ შეგატყობინებთ ექსკლუზიურ Principal / Director დონის ტექნიკურ ვაკანსიებს 12 თვის განმავლობაში.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">ტექნიკური სიახლეებისა და არქიტექტურული კვლევების გამოწერა</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">მიიღეთ TechNova AI Research Lab-ის ყოველთვიური ტექნიკური დაიჯესტი და ინფრასტრუქტურული ბლოგი.</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Irrevocable Confirmation & Action CTA Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="p-space-md rounded-xl bg-error-container/40 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[24px] flex-shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col gap-space-2xs">
+<span class="font-title-md text-title-md font-bold text-on-error-container">საბოლოო შეთანხმების დადასტურება</span>
+<label class="flex items-start gap-space-xs cursor-pointer mt-1">
+<input class="mt-1 h-4 w-4 rounded text-error focus:ring-error" id="irrevocable_confirm" onchange="toggleDeclineButton(this.checked)" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">
+                ვადასტურებ, რომ ჩემი გადაწყვეტილება საბოლოოა, სრულად გაცნობიერებული და მიმდინარე კონტრაქტის პროექტი (#TN-OFFER-8941-REV2) გაუქმდება დაუყოვნებლივ.
+              </span>
+</label>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<a class="w-full sm:w-auto px-space-lg py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center justify-center gap-space-xs text-center" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>უკან დაბრუნება (Cancel &amp; Back to Review)</span>
+</a>
+<button class="w-full sm:w-auto px-space-xl py-space-sm rounded-xl font-label-md text-label-md font-bold text-on-error bg-error opacity-40 cursor-not-allowed transition-all flex items-center justify-center gap-space-xs shadow-sm hover:shadow-md active:scale-95" disabled="" id="decline_btn" onclick="executeDeclineWorkflow()" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+<span>საბოლოო უარის ოფიციალურად დაფიქსირება (Final Decline)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Context Sidebar (Col 9-12) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg sticky top-20">
+<!-- Key Card: What happens next? -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">help</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">რა ხდება უარის შემდეგ?</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          გადაწყვეტილების დაფიქსირების შემდეგ თქვენს ანგარიშზე ამოქმედდება შემდეგი ავტომატური პროტოკოლები:
+        </p>
+<ol class="space-y-space-md mt-space-xs">
+<li class="flex items-start gap-space-sm">
+<div class="h-6 w-6 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">კონტრაქტის პროექტის ანულირება</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DocuSign-ის უსაფრთხო კონვერტი და სამუშაო იურიდიული შეთანხმება დაუყოვნებლივ გაუქმდება.</span>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="h-6 w-6 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">მონაცემთა დაცვა (GDPR &amp; EU AI Act)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">თქვენი პერსონალური მონაცემები, რეზიუმე და გასაუბრების ჩანაწერები ინახება დაშიფრულ ჰაბში.</span>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="h-6 w-6 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">პირადი მადლობის გაგზავნა</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ნინო ბერიძე და ტექნიკური კომიტეტი მიიღებენ თქვენს შეტყობინებას თბილი პროფესიული დასასრულისთვის.</span>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="h-6 w-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">უცვლელი TalentAI რეიტინგი (98%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">უარი არ ახდენს ნეგატიურ გავლენას თქვენს ალგორითმულ რეპუტაციაზე გლობალურ ბაზარზე.</span>
+</div>
+</li>
+</ol>
+</div>
+<!-- Specialized Vector Score Visualization: Candidate Standing -->
+<div class="bg-gradient-to-br from-surface-container-high/70 via-surface-container-lowest to-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-outline">Talent Standing Post-Decline</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-bold">Top Tier</span>
+</div>
+<div class="flex items-center gap-space-md py-space-xs">
+<!-- Circular Radial Progress -->
+<div class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-metric-score text-headline-sm text-primary">98</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Architect Tier L6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">მომავალი შეთავაზებები პრიორიტეტულად გამოჩნდება თქვენს პირად სივრცეში.</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Approved for direct re-engagement</span>
+</div>
+</div>
+<!-- Recruiter Direct Contacts (In case of last-minute questions) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">პირადი HR კონტაქტი</span>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Corporate headshot of Nino Beridze, VP of Global Talent, warm smile, professional attire, soft modern office backdrop with subtle purple ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_GoyPMJ6p7Cw7oPCCyr3i-Dqx7ytNduzjnlQoaCHgRo6i5CgKwyMMNy6jpghB-x-PueRwAUdipfrZJRYONlT3SmRH70SEiUPmJpbTJe3IJdP0IhJg48OyalBhRgzg1rx4LlgFSJ-vg_ax73w1zdgn3tFOkFx-wCycfeuCVOgL21-Y9LGc5dpj54xMc0PrClgl9WqBOW7kWxuL3O7XGFC-58BvacNQOrMsDGRGRpkGIzh4-tHCMFFy"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">ნინო ბერიძე</span>
+<span class="font-body-sm text-body-sm text-outline">VP of Global Talent · TechNova</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs pt-space-xs">
+<a class="flex-1 py-1.5 px-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-sm text-label-sm text-center font-medium transition-colors flex items-center justify-center gap-1" href="mailto:nino.beridze@technova.ai">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>პირადი მეილი</span>
+</a>
+<a class="py-1.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-sm text-label-sm text-center font-medium transition-colors flex items-center justify-center" href="#">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Success Modal (Hidden by Default, triggered by decline button) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden items-center justify-center p-space-md" id="decline_success_modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-xl shadow-xl flex flex-col items-center text-center gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<div class="h-16 w-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-lg text-headline-lg text-on-surface">უარი ოფიციალურად დაფიქსირდა</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          ოფერი #TN-OFFER-8941-REV2 წარმატებით ანულირებულია. TechNova Global-ის გუნდი მადლობას გიხდით დათმობილი დროისთვის და გისურვებთ წარმატებას ახალ გამოწვევაში.
+        </p>
+</div>
+<div class="w-full bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between text-left">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">mark_email_read</span>
+<span class="font-body-sm text-body-sm text-on-surface">დადასტურება გაიგზავნა:</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary">nika.kalandadze@example.com</span>
+</div>
+<a class="w-full py-space-sm rounded-xl font-label-md text-label-md font-bold text-on-primary bg-primary hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs shadow-md" href="#">
+<span>პორტალის მთავარ გვერდზე დაბრუნება</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Interactive script for client-side behaviors -->
+<script>
+    function toggleDeclineButton(isChecked) {
+      const btn = document.getElementById('decline_btn');
+      if (isChecked) {
+        btn.disabled = false;
+        btn.classList.remove('opacity-40', 'cursor-not-allowed');
+        btn.classList.add('cursor-pointer');
+      } else {
+        btn.disabled = true;
+        btn.classList.add('opacity-40', 'cursor-not-allowed');
+        btn.classList.remove('cursor-pointer');
+      }
+    }
+
+    function executeDeclineWorkflow() {
+      const modal = document.getElementById('decline_success_modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed-variant": "#5516be",
+          "on-primary": "#ffffff",
+          "surface-variant": "#dae2fd",
+          "inverse-on-surface": "#eef0ff",
+          "surface-container-low": "#f2f3ff",
+          "primary-container": "#4f46e5",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed": "#23005c",
+          "inverse-surface": "#283044",
+          "surface-dim": "#d2d9f4",
+          "outline-variant": "#c7c4d8",
+          "primary-fixed-dim": "#c3c0ff",
+          "surface-container-highest": "#dae2fd",
+          "on-surface": "#131b2e",
+          "on-primary-fixed-variant": "#3323cc",
+          "surface-bright": "#faf8ff",
+          "secondary": "#6b38d4",
+          "secondary-container": "#8455ef",
+          "error": "#ba1a1a",
+          "on-tertiary": "#ffffff",
+          "background": "#faf8ff",
+          "tertiary": "#00505f",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "primary-fixed": "#e2dfff",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#d0bcff",
+          "on-secondary-container": "#fffbff",
+          "on-primary-fixed": "#0f0069",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "tertiary-container": "#006a7c",
+          "on-background": "#131b2e",
+          "on-tertiary-fixed": "#001f26",
+          "on-tertiary-container": "#93e8ff",
+          "surface-tint": "#4d44e3",
+          "on-error-container": "#93000a",
+          "outline": "#777587",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "surface-container": "#eaedff",
+          "surface-container-high": "#e2e7ff",
+          "surface": "#faf8ff",
+          "on-surface-variant": "#464555",
+          "secondary-fixed": "#e9ddff",
+          "inverse-primary": "#c3c0ff",
+          "on-primary-container": "#dad7ff",
+          "primary": "#3525cd",
+          "tertiary-fixed": "#acedff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "margin-tablet": "2rem",
+          "space-xs": "0.5rem",
+          "gutter-mobile": "1rem",
+          "space-xl": "2rem",
+          "margin-mobile": "1rem",
+          "space-2xs": "0.25rem",
+          "margin-desktop": "2.5rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "1.5rem",
+          "space-2xl": "3rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Inter"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "metric-score": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "metric-score": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-inverse-surface text-inverse-on-surface shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt='Modern geometric vector logo for AI HR platform "TalentAI". An abstract glowing neural node interconnected with human profile silhouette or dual helix, sharp indigo and cyan gradient, sleek minimalist technology icon, dark transparent background, high precision.. Design context: - Primary color: #4f46e5
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UUVrTjMQv_9_6czxxGWjFXYQsKJhhpjE_rN6Rsh1_DODLl2K2L43HksW7zEaVhys1q9z0xnNqQwyaII0TRBEAn_Wcxhl722gxeuo_LRmbFAtlSjhswTPTWu0xCgNpElS2vuTgAHPXcEc9VqqcIxYN_e1l-EvD_5SMi9w-6hXnF7WG4MBWvdg0TrNsZIk0gPCHapcHhOvC0lmDSQvXhr2C3QAO4pDjsnIKa4XnF5XjDW027dBFe8LLpjOM"/><div class="h-5 w-px bg-outline/30 hidden sm:block"></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-inverse-on-surface truncate">TechNova Global • Senior Cloud &amp; AI Architect Interview</span><div class="flex items-center gap-space-xs text-tertiary-fixed-dim"><span class="material-symbols-outlined text-body-sm">lock</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-variant/80">E2E Quantum-Safe Encrypted Room #TN-8820</span></div></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-highest/10 px-space-sm py-space-2xs rounded-lg"><span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span><span class="font-label-md text-label-md text-inverse-on-surface font-mono">REC</span><span class="font-label-md text-label-md text-inverse-on-surface font-mono ml-space-xs">00:42:19</span></div><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container-highest/10 text-inverse-on-surface"><span class="material-symbols-outlined text-title-md text-tertiary-fixed-dim">groups</span><span class="font-label-md text-label-md">3 Participants Active</span></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1U24egjjGI9Kh3o3HIogjryWBg0W2SkX-Ozv_sw3uAodsNmZ4q92OqtdDKkZMxLkaeoH2N4QNkD3HNp624Q6vh1ZuoXm2UsFZDajmfag3qQoGJbn1K7Y4mbWshgEkRNoPG5mSQzGhs_gw3StV6T_K72BgaQlpiG4wlKZ9d0YNsvlzDFyQhCEjrtq5_st8_XWdqAIZbUatu9EuCyLWcPOF2LT7uvtIYNDz_Qk8cLh1ZB_OSS08IdyKvZ0PM"/><span class="hidden xl:inline-block font-label-md text-label-md text-inverse-on-surface">Dr. Aris Thorne (Lead)</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-16 w-64 bg-surface-container-low z-40 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-sm px-space-sm"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Interviewer Suite</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]" data-path="live-coding-environment" href="#"><span class="material-symbols-outlined text-title-md">terminal</span><span>Technical Assessment</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="candidate-ai-profile" href="#"><span class="material-symbols-outlined text-title-md">psychology</span><span>AI Co-Pilot &amp; Match</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="system-architecture-canvas" href="#"><span class="material-symbols-outlined text-title-md">draw</span><span>System Architecture</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="interviewer-rubric-notes" href="#"><span class="material-symbols-outlined text-title-md">fact_check</span><span>Scoring &amp; Rubric</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="live-chat-transcription" href="#"><span class="material-symbols-outlined text-title-md">forum</span><span>Live Transcript</span></a></nav></div><div class="px-space-md flex flex-col gap-space-xs"><div class="p-space-sm rounded-xl bg-surface-container-high/60 flex flex-col gap-space-2xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Candidate Integrity</span><span class="font-label-sm text-label-sm text-tertiary font-bold">98% Confidence</span></div><div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden"><div class="bg-tertiary h-full w-[98%]"></div></div></div></div></aside><div class="pl-64"><main class="w-full pt-16 pb-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- INTERVIEWER CONTEXT STRIP -->
+<div class="w-full bg-surface-container-low px-gutter-desktop py-space-sm shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold">LIVE SESSION</span>
+</div>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">ნიკა კალანდაძე</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">Senior Cloud &amp; AI Infrastructure Architect</span>
+</div>
+<div class="hidden xl:flex items-center gap-space-xs px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-body-sm text-primary">verified_user</span>
+<span>EU AI Act Art. 14 Neutrality Verified</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Live Session Counters -->
+<div class="flex items-center gap-space-sm bg-surface-container-highest/60 px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-title-md text-primary">timer</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-mono font-bold text-on-surface leading-none">24:18 <span class="text-on-surface-variant font-normal text-body-sm">/ 45:00 წთ</span></span>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm font-label-md text-label-md" id="btnRunTestsTop" type="button">
+<span class="material-symbols-outlined text-title-md">play_arrow</span>
+<span class="hidden lg:inline">კოდის გაშვება</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-title-md">swap_horiz</span>
+<span class="hidden lg:inline">დავალების გადართვა</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-title-md">assignment_turned_in</span>
+<span>შეფასების შეჯამება</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MAIN DUAL COCKPIT WORKSPACE -->
+<div class="w-full px-gutter-desktop py-space-md grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- LEFT 7 COLS: COLLABORATIVE MONACO IDE & TEST CONSOLE -->
+<div class="xl:col-span-7 flex flex-col gap-space-md min-w-0">
+<!-- PROBLEM CARD & HINT INJECTION -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">TASK #2</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">GPU Memory Fragmentation &amp; Cold-Start Mitigation</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm">
+              კანდიდატს ევალება vLLM ლოგიკაში PagedAttention ბლოკების დინამიური გამოყოფა, როდესაც KV Cache-ის ზომა აღემატება VRAM ლიმიტს RoPE ტოკენების დამუშავებისას.
+            </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" id="btnHintInject" type="button">
+<span class="material-symbols-outlined text-body-md text-secondary">lightbulb</span>
+<span>ჰინტის ინექცია</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-body-md text-tertiary">visibility_off</span>
+<span>Hidden Tests (3)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- IDE CONTAINER -->
+<div class="bg-inverse-surface rounded-xl overflow-hidden shadow-md flex flex-col text-inverse-on-surface">
+<!-- IDE TABS & CONTROLS -->
+<div class="bg-inverse-surface px-space-sm pt-space-xs flex items-center justify-between gap-space-sm overflow-x-auto">
+<div class="flex items-center gap-space-2xs">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-t-lg bg-surface-container-highest/20 text-inverse-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-sm text-tertiary-fixed-dim">code</span>
+<span>vllm_autoscaler.go</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-t-lg text-inverse-on-surface/60 hover:text-inverse-on-surface hover:bg-surface-container-highest/10 transition-colors font-label-md text-label-md cursor-pointer">
+<span class="material-symbols-outlined text-body-sm">layers</span>
+<span>architecture.tf</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-t-lg text-inverse-on-surface/60 hover:text-inverse-on-surface hover:bg-surface-container-highest/10 transition-colors font-label-md text-label-md cursor-pointer">
+<span class="material-symbols-outlined text-body-sm">hub</span>
+<span>k8s-daemonset.yaml</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-t-lg bg-secondary/30 text-secondary-fixed-dim font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-sm text-secondary-fixed-dim">lock</span>
+<span>ინტერვიუერის დაფა (Hidden)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pb-space-xs shrink-0">
+<div class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-surface-container-highest/10 text-inverse-on-surface/80 font-label-sm text-label-sm font-mono">
+<span>Go 1.22.4</span>
+<span>•</span>
+<span>CUDA 12.4</span>
+</div>
+</div>
+</div>
+<!-- CODE EDITOR CANVAS -->
+<div class="relative font-mono text-body-sm leading-relaxed p-space-md bg-inverse-surface overflow-x-auto min-h-[380px]">
+<!-- Code Lines -->
+<div class="flex gap-space-sm">
+<!-- Line numbers -->
+<div class="select-none text-outline/50 flex flex-col text-right font-mono text-body-sm pr-space-xs">
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+<div>56</div>
+<div>57</div>
+<div>58</div>
+<div>59</div>
+</div>
+<!-- Code Content with Dynamic Collaborator Cursors -->
+<div class="flex flex-col flex-grow text-inverse-on-surface">
+<div><span class="text-secondary-fixed-dim font-bold">package</span> engine</div>
+<div> </div>
+<div><span class="text-secondary-fixed-dim font-bold">type</span> PagedAttentionPool <span class="text-secondary-fixed-dim font-bold">struct</span> {</div>
+<div>  blockSizeBytes <span class="text-tertiary-fixed-dim">int64</span></div>
+<div class="relative bg-primary-container/20 -mx-space-xs px-space-xs rounded">
+                  gpuBuckets     []*CUDAMemoryBlock
+                <!-- Interviewer Cursor (Levan) -->
+<span class="inline-flex items-center relative">
+<span class="w-0.5 h-4 bg-primary-fixed-dim inline-block align-middle animate-pulse"></span>
+<span class="absolute -top-5 left-0 px-space-2xs py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded shadow-sm whitespace-nowrap">ლევან (Lead)</span>
+</span>
+</div>
+<div>  mu             sync.RWMutex</div>
+<div>}</div>
+<div> </div>
+<div><span class="text-secondary-fixed-dim font-bold">func</span> (p *PagedAttentionPool) AllocateBlock(req *InferenceTokenRequest) (*BlockIndex, <span class="text-tertiary-fixed-dim">error</span>) {</div>
+<div>  p.mu.Lock()</div>
+<div>  <span class="text-secondary-fixed-dim font-bold">defer</span> p.mu.Unlock()</div>
+<div> </div>
+<div class="text-outline/70">// Candidate is implementing zero-copy memory ring buffer to avoid RoPE fragmentation</div>
+<div>  <span class="text-secondary-fixed-dim font-bold">if</span> p.gpuBuckets == <span class="text-secondary-fixed-dim font-bold">nil</span> || len(p.gpuBuckets) == 0 {</div>
+<div>    <span class="text-secondary-fixed-dim font-bold">return nil</span>, ErrOutOfDeviceMemory</div>
+<div>  }</div>
+<div> </div>
+<div>  <span class="text-outline/70">// Dynamically coalesce KV Cache blocks across NUMA nodes</span></div>
+<div>  targetBlock := p.coalesceFragmentedBlocks(req.ContextTokensLen)</div>
+<div class="relative bg-tertiary-container/30 -mx-space-xs px-space-xs rounded">
+                  <span class="text-secondary-fixed-dim font-bold">if</span> targetBlock.IsAvailable() {
+                <!-- Candidate Live Cursor (Nika) -->
+<span class="inline-flex items-center relative">
+<span class="w-0.5 h-4 bg-tertiary-fixed-dim inline-block align-middle animate-pulse"></span>
+<span class="absolute -top-5 left-0 px-space-2xs py-0.5 bg-tertiary text-on-tertiary font-label-sm text-label-sm rounded shadow-sm whitespace-nowrap">ნიკა კალანდაძე (Typing...)</span>
+</span>
+</div>
+<div>    targetBlock.PinPinnedHostMemory()</div>
+</div>
+</div>
+</div>
+<!-- TEST RUNNER CONSOLE -->
+<div class="bg-inverse-surface/90 px-space-md py-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-body-md text-tertiary-fixed-dim">terminal</span>
+<span class="font-label-md text-label-md font-bold text-inverse-on-surface">Test Runner Output</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold">12 / 12 PASSING</span>
+</div>
+<div class="flex items-center gap-space-md text-inverse-on-surface/80 font-mono font-label-sm text-label-sm">
+<span>Time: 11.8ms</span>
+<span>Alloc: 0 B/op (Zero-Copy)</span>
+<span>Race: Clean</span>
+</div>
+</div>
+<div class="bg-inverse-surface rounded p-space-xs font-mono text-body-sm text-surface-variant flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="text-tertiary-fixed-dim font-bold">=== RUN</span>
+<span>TestPagedAttention_CoalesceFragmentedBlocks</span>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim">
+<span>--- PASS:</span>
+<span>TestPagedAttention_CoalesceFragmentedBlocks (0.00s) [KV_Head_Size=128, Concurrency=64]</span>
+</div>
+<div class="text-outline/70">coverage: 94.2% of statements in engine/</div>
+</div>
+</div>
+</div>
+<!-- INTERVIEWER PRIVATE SCRATCHPAD & QUICK LABELS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-title-md text-secondary">edit_note</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">ინტერვიუერის პირადი ჩანაწერები (Scratchpad)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">კანდიდატისთვის უხილავია</span>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-space-xs py-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>+ ძლიერი პასუხი</span>
+</button>
+<button class="px-space-xs py-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>+ სისტემური აზროვნება</span>
+</button>
+<button class="px-space-xs py-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>+ Hands-on კოდის სიზუსტე</span>
+</button>
+<button class="px-space-xs py-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs" type="button">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>+ დროის გადაცილება</span>
+</button>
+</div>
+<textarea class="w-full bg-surface-container-low rounded-lg p-space-sm text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-colors resize-none" placeholder="ჩაიწერეთ პირადი შენიშვნები: კანდიდატი ზუსტად განმარტავს zero-copy ring-buffer-ს, მაგრამ Triton-ის დინამიურ ბატჩინგზე დამატებითი კითხვა გვჭირდება..." rows="2"></textarea>
+</div>
+</div>
+<!-- RIGHT 5 COLS: INTERVIEWER COCKPIT, VIDEO STACK, AI COPILOT & RUBRIC -->
+<div class="xl:col-span-5 flex flex-col gap-space-md min-w-0">
+<!-- VIDEO STACK (CANDIDATE PRIMARY + OBSERVERS) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<!-- Primary Feed: Nika Kalandadze -->
+<div class="relative w-full rounded-lg overflow-hidden bg-inverse-surface aspect-video shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Professional tech interview candidate sitting at high-tech clean desk with multiple screens subtle blue and indigo lighting, looking attentively at web camera, crisp business casual attire, warm focused expression, high resolution tech studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9wvcpHxJOHln61ZCNKa3FQV6zu1Gj65gzZvdvhzO5UvasqiSs44AMMjnH7fIUdD-egbC00bmngoxT8vVylg6CujQar5FOMyOAxlKlKlG4r8Mj4h3tL48U-C0p5hBe2IepaUB95jnUP_oBg73l19-LmbgHXE5k8d0SwPjdtgfZ2lnd79RdRjUQfhvV4rpRAqQANbFAMf8ICx6eWbD0zytIFZ_bsqIMxn81J3UsC00Hqt2Gxez57Jc2"/>
+<!-- Stream Overlay Badges -->
+<div class="absolute top-space-xs left-space-xs flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>ნიკა კალანდაძე</span>
+</span>
+<span class="px-space-xs py-space-2xs rounded bg-primary-container/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-body-sm">mic</span>
+<span>Shure MV7+</span>
+</span>
+</div>
+<!-- AI Telemetry Pill -->
+<div class="absolute top-space-xs right-space-xs px-space-xs py-space-2xs rounded bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-body-sm text-tertiary-fixed-dim">psychology</span>
+<span class="text-tertiary-fixed-dim font-bold">97% Focus</span>
+<span class="text-inverse-on-surface/60">| 0 latency</span>
+</div>
+<!-- Live Speech Waveform Pill -->
+<div class="absolute bottom-space-xs left-space-xs right-space-xs flex items-center justify-between bg-inverse-surface/75 backdrop-blur-md px-space-sm py-space-2xs rounded">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-ping"></span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface truncate">„ვფიქრობ, KV Cache-ის გვერდები უმჯობესია ფრაგმენტაციის გარეშე...“</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim shrink-0 font-mono">1080p60</span>
+</div>
+</div>
+<!-- Secondary Participants Grid (Interviewer & Director) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Levan Kakhadze (Self View) -->
+<div class="relative rounded-lg overflow-hidden bg-inverse-surface aspect-video">
+<img class="w-full h-full object-cover" data-alt="Distinguished Georgian tech lead Levan Kakhadze in modern glass-walled tech office, wearing spectacles, confident smile, microphone boom arm visible, cool ambient purple and indigo lighting, executive portrait style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkJwhzp_Yrg5z975YJ5HugFISWTk7jklXQl8n8N0jQQZ0trw1wPqa9ebm2V1nXpKfVeo-cQQh2LpgfQsuGfG3W4nlPSttbz1QoPQQzm1aQmkbi6XNtv2EQzL3PW5K90GarbSgacrL9wxA1Zg5jWpIuyiLXqQ62PkLRiwD0olhjFoQI9hF1QKFLKvZ5XlE4QsM4SzGjlUyfZt1fieUx6ZQRzCOXhVgOcOdDm1aF13igMpao05e4_aP3"/>
+<div class="absolute bottom-space-2xs left-space-2xs px-space-2xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-body-sm text-primary-fixed-dim">mic</span>
+<span>შენ (ლევან კ.)</span>
+</div>
+</div>
+<!-- Nino Beridze (HR / Observational Mode) -->
+<div class="relative rounded-lg overflow-hidden bg-inverse-surface aspect-video">
+<img class="w-full h-full object-cover" data-alt="Nino Beridze HR director observing talent interview in sleek architectural corporate conference room, professional smiling expression, warm lighting, high fidelity enterprise atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8wM1-rddOGXU4Qr6iGwKBL7zFGn6LxHs0GgGIdie2D75FrNc5Hz9md7IznnWt-Ilg9XuwRU5FPiu72RD1RxzI3_hXNx5qlYfHUXXCWYVYBIl0zN0Oy3onN8jcoNujKEptWu9ZyWBP3oMXW6-rn0trpBobap73bkbNVw7xxm_AeoMUwz_s_8JxeW68nlXgo8H2tHhVd0Hhn4DNZkn6SPEk_OW047m0YE7mVRm8VhPMDcbIX-JJuu1Y"/>
+<div class="absolute bottom-space-2xs left-space-2xs px-space-2xs py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-body-sm text-error">mic_off</span>
+<span>ნინო ბერიძე (HR)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- AI COPILOT FOR INTERVIEWER: SUGGESTED DEEP-DIVE QUESTIONS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-title-md text-primary">auto_awesome</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">AI Co-Pilot • Deep-Dive კითხვები</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">დინამიური</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Suggested Question 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs cursor-pointer group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">KV Cache &amp; 32k RoPE Context</span>
+<span class="material-symbols-outlined text-body-sm text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+              „როგორ მართავს თქვენი იმპლემენტაცია KV cache-ის memory fragmentation-ს, როცა RoPE context აღემატება 32k ტოკენს?“
+            </p>
+</div>
+<!-- Suggested Question 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs cursor-pointer group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Triton Dynamic Batching</span>
+<span class="material-symbols-outlined text-body-sm text-on-surface-variant group-hover:text-tertiary transition-colors">arrow_forward</span>
+</div>
+<p class="text-on-surface font-body-sm text-body-sm">
+              „ჰკითხეთ Triton-ის dynamic batching-ის გავლენაზე P99 latency-ზე მაღალი VRAM დატვირთვისას.“
+            </p>
+</div>
+</div>
+</div>
+<!-- OBJECTIVE SCORING RUBRIC & METRICS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-title-md text-tertiary">fact_check</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">ობიექტური შეფასების რუბრიკა</span>
+</div>
+<span class="font-metric-score text-metric-score text-primary font-bold">4.8 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 5.0</span></span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Metric 1 -->
+<div class="flex flex-col gap-space-2xs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">სისტემური არქიტექტურა (Cloud &amp; AI)</span>
+<span class="font-bold text-primary">4.8 / 5.0</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[96%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col gap-space-2xs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">განაწილებული სისტემები &amp; Concurrency</span>
+<span class="font-bold text-tertiary">4.9 / 5.0</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[98%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col gap-space-2xs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">კომუნიკაცია &amp; აზრის სიცხადე</span>
+<span class="font-bold text-secondary">4.7 / 5.0</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[94%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- LIVE TRANSCRIPT FEED -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-title-md text-on-surface-variant">record_voice_over</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Live GeoASR სტრიმინგი</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-mono">16kHz real-time</span>
+</div>
+<div class="flex flex-col gap-space-xs max-h-36 overflow-y-auto pr-space-2xs">
+<div class="flex flex-col gap-space-2xs text-body-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">ლევან კახაძე</span>
+<span class="font-mono text-outline">23:40</span>
+</div>
+<p class="text-on-surface">„ნიკა, თუ შეგვიძლია ახლა ყურადღება გავამახვილოთ PagedAttention-ის ქეშის კოალესცენციაზე?“</p>
+</div>
+<div class="flex flex-col gap-space-2xs text-body-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-tertiary">ნიკა კალანდაძე</span>
+<span class="font-mono text-outline">24:02</span>
+</div>
+<p class="text-on-surface">„დიახ, ზუსტად ამ ხაზზე ვამატებ PinPinnedHostMemory-ს, რათა GPU-ს გადავცეთ პირდაპირ zero-copy ბაფერი.“</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE TOAST NOTIFICATION FOR HINT OR ACTION -->
+<div class="fixed bottom-20 right-gutter-desktop z-40 hidden bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-md" id="hintToast">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-title-md text-secondary-fixed-dim">auto_awesome</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">ჰინტი გაეგზავნა კანდიდატს</span>
+<span class="font-body-sm text-body-sm text-surface-variant">ნიკას IDE-ში გამოჩნდა მინიშნება PagedAttention-ის ინდექსირებაზე.</span>
+</div>
+</div>
+<button class="text-inverse-on-surface/70 hover:text-inverse-on-surface" id="btnCloseToast" type="button">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple interaction for test runner and hint injection button
+  const btnRunTests = document.getElementById('btnRunTestsTop');
+  const btnHint = document.getElementById('btnHintInject');
+  const hintToast = document.getElementById('hintToast');
+  const btnCloseToast = document.getElementById('btnCloseToast');
+
+  if (btnHint && hintToast) {
+    btnHint.addEventListener('click', () => {
+      hintToast.classList.remove('hidden');
+      setTimeout(() => {
+        hintToast.classList.add('hidden');
+      }, 4000);
+    });
+  }
+
+  if (btnCloseToast && hintToast) {
+    btnCloseToast.addEventListener('click', () => {
+      hintToast.classList.add('hidden');
+    });
+  }
+
+  if (btnRunTests) {
+    btnRunTests.addEventListener('click', () => {
+      const originalText = btnRunTests.innerHTML;
+      btnRunTests.innerHTML = '<span class="material-symbols-outlined text-title-md animate-spin">refresh</span><span>ტესტები ეშვება...</span>';
+      setTimeout(() => {
+        btnRunTests.innerHTML = originalText;
+      }, 1200);
+    });
+  }
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-16 bg-inverse-surface z-50 flex items-center justify-between px-gutter-desktop shadow-[0_-1px_8px_rgba(0,0,0,0.12)]"><div class="flex items-center gap-space-xs"><button class="p-space-xs rounded-lg bg-surface-container-highest/20 text-inverse-on-surface hover:bg-surface-container-highest/30 transition-colors" type="button"><span class="material-symbols-outlined text-title-md">mic</span></button><button class="p-space-xs rounded-lg bg-surface-container-highest/20 text-inverse-on-surface hover:bg-surface-container-highest/30 transition-colors" type="button"><span class="material-symbols-outlined text-title-md">videocam</span></button><button class="p-space-xs rounded-lg bg-surface-container-highest/20 text-inverse-on-surface hover:bg-surface-container-highest/30 transition-colors" type="button"><span class="material-symbols-outlined text-title-md">screen_share</span></button></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-title-md">play_arrow</span><span>Run Code Tests</span></button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-title-md">auto_awesome</span><span>Generate AI Summary</span></button></div><div class="flex items-center gap-space-xs"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-error text-on-error hover:opacity-90 transition-opacity font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-title-md">call_end</span><span class="hidden sm:inline">End Interview</span></button></div></footer></body></html>
